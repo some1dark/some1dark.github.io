@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<title>Stephen James Morris - Form Aufgaben</title>
+
+<!-- meta-Tags -->
+<meta charset="UTF-8"> 
+
+
+<!-- Load CSS -->
+<link type="text/css" rel="stylesheet" href="css/style.css">
+
+<!-- Nur zwingend benötigte JS hier laden, sonst zum schluß vom BODY -->
+
+</head>
+
+
+
+<body>
+
+
+<div id="page-wrap">
+		
+	<header>
+		<h1>Lehrer Lampe's Klassenarbeiten</h1>
+	</header>
+	
+	<form action="http://www.wolfgang-lenz.de/auswertung.php" method="get">
+	<!-- method get wird in der URI angezeigt und post nicht -->
+	
+		<div class="border">
+	  		<fieldset>
+	  		<legend>Input Type Text:</legend>
+	  		Name: <input name="name" type="text"><br>
+	  		Email: <input name="email" type="email" required>
+	  		</fieldset>
+		</div>
+		
+		<br>
+		
+		<div class="border">
+			<fieldset>
+	  		<legend>Schuljahr:</legend>
+	  		<select name="Schuljahr" size="4">
+	  			<option>2013/2014</option>
+	  			<option>2014/2015</option>
+	  			<option>2015/2016</option>
+	  			<option>2016/2017</option>
+	  		</select>
+	  		</fieldset>
+		</div>
+		
+		<div class="border">
+			<fieldset>
+				<legend>Fach:</legend>
+				<input type="radio" name="fach" id="deutsch" value="Deutsch" />
+					<label for="deutsch">Deutsch</label>
+				<input type="radio" name="fach" id="biologie" value="Biologie" />
+					<label for="biologie">Biologie</label>
+				<input type="radio" name="fach" id="informatik" value="Informatik" />
+					<label for="informatik">Informatik</label>
+			</fieldset>
+		</div>
+		
+		<div class="border">
+			<fieldset>
+	  		<legend>Note:</legend>
+	  		<select name="Note">
+	  			<option>Sehr Gut</option>
+	  			<option>Gut</option>
+	  			<option>Ausreichend</option>
+	  			<option>Befriedigend</option>
+	  		</select>
+	  		</fieldset>
+		</div>
+		
+		<div class="border">
+			<fieldset>
+				<legend>Verhalten:</legend>
+				<input type="checkbox" name="verhalten[]" id="ruhig" value="ruhig" />
+					<label for="ruhig">ruhig</label>
+				<input type="checkbox" name="verhalten[]" id="schüchtern" value="schüchtern" />
+					<label for="schüchtern">schüchtern</label>
+				<input type="checkbox" name="verhalten[]" id="aggresiv" value="aggresiv" />
+					<label for="aggresiv">aggresiv</label>
+			</fieldset>
+		</div>
+		
+		<div class="border">
+			<fieldset>
+			<legend>Kommentar:</legend>
+				<textarea name="kommentar"></textarea>
+			</fieldset>
+		</div>
+		
+		<div class="border">
+			<fieldset>
+				<legend>Klassenarbeit:</legend>
+				<input type="file" name="klassenarbeit" id="file" />
+			</fieldset>
+		</div>
+		
+		<div class="border">
+	  		<fieldset>
+	  		<legend>Passwort:</legend>
+	  		Passwort: <input name="password" type="password">
+	  		</fieldset>
+		</div>
+		
+		<button type="submit">Senden</button>
+	</form>
+	
+</div>
+
+<!-- Load JS at the end of Body-->
+</body>
+</html>/
