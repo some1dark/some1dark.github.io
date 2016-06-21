@@ -1,0 +1,347 @@
+/* CSS by Stephen James Morris - 16/06/2016 */
+
+@font-face {
+	font-family: Scriptina;
+	src: url(../fonts/scriptina.eot);
+	src: url(../fonts/scriptina.eot?#iefix) format("embeded-opentype"),
+	url(../fonts/scriptina.svg#scriptinaregular) format("svg"),
+	url(../fonts/scriptina.woff) format("woff"),
+	url(../fonts/scriptina.ttf) format("truetype");
+}
+
+html {
+	font-size: 100%;
+}
+
+body{
+	font-size: 1em;
+	font-family: Lucid Grande, sans-serif;
+	color: rgba(51, 51, 51, 1);
+	background-image: url(../media/bg.gif);
+	max-width: 80%;
+	margin: 0 auto;
+	position: relative;
+}
+
+header, main, nav, aside, article {
+	display: block;
+}
+
+header, #hauptnavi, #linke_spalte, /*aside,*/ main {
+	border: 1px solid rgba(51, 51, 51, 1)
+}
+#linke_spalte, aside {
+	width: 20%;
+}
+
+#hauptnavi, header, #linke_spalte, main, aside article {
+	-webkit-box-shadow: rgba(0, 0, 0, 0.4) 4px 5px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.4) 4px 5px;
+	box-shadow: rgba(0, 0, 0,  0.4) 4px 5px;
+}
+
+header {
+	padding: 1rem;
+	margin: 1rem 0 5rem 0; /* TOP / RIGHT / BOTTOM / LEFT */
+	height: 10rem;
+	background-image: linear-gradient(#fff, #c0cbd3);
+	background-image: -moz-linear-gradient(#fff, #c0cbd3);
+	background-image: -webkit-linear-gradient(#fff, #c0cbd3);
+}
+
+header h1 {
+	padding: 0;
+	margin: 0;
+	font-family: Scriptina;
+	font-weight: 400;
+	color: #a00000;
+	font-size: 6rem;
+	line-height: 8rem; /*1.5rem*/
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+	-moz-text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+	-webkit-text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+a#logo {
+	width: 13rem;
+	height: 13rem;
+	background: url(../media/bag.png) 0 0 no-repeat; /* LEFT / TOP */
+	position: absolute;
+	right: -3rem;
+}
+a#logo:hover {
+	background: url(../media/bag.png) 0 -220px no-repeat; /* LEFT / TOP */
+}
+
+main {
+	width:  56%;
+	padding: 0 1rem 1rem 1rem;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+main, header {
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+}
+
+#linkw_spalte, #hauptnavi, main a.linkbox, aside article {
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+
+#linke_spalte, aside, main {
+	position: absolute;
+	top: 22rem;
+}
+
+#linke_spalte {
+	left: 0;
+}
+
+aside {
+	right: 0;
+}
+
+main {
+	width: 56%;
+	left: 22%;
+}
+
+#hauptnavi ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: table;
+	width: 100%;
+}
+
+#hauptnavi ul li {
+	display: table-cell;
+	text-align: center;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #333;
+	/*vertical-align: middle;*/
+}
+
+#hauptnavi ul li a {
+	text-decoration: none;
+	color: inherit;
+	font-weight: 700;
+	display: block;
+	line-height: 2rem; /* Die Line Heiht ist bessrer als vertical align weil dadurch der link sich auf die gesamte Fläche ausbreitet */
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
+
+#hauptnavi ul li:first-child {
+	border-left-style: none;
+	border-top-left-radius: 7px;
+	-webkit-border-top-left-radius: 7px;
+	-moz-border-radius-topleft: 7px;
+	border-bottom-left-radius: 7px;
+	-webkit-border-bottom-left-radius: 7px;
+	-moz-border-radius-bottomleft: 7px;
+	
+}
+#hauptnavi ul li:last-child {
+	border-right-style: none;
+	border-top-right-radius: 7px;
+	-webkit-border-top-right-radius: 7px;
+	-moz-border-radius-topright: 7px;
+	border-bottom-right-radius: 7px;
+	-webkit-border-bottom-right-radius: 7px;
+	-moz-border-radius-bottomright: 7px;
+}
+
+#hauptnavi, #hauptnavi ul {
+	height: 2rem;
+}
+
+nav#hauptnavi {
+	background-image: linear-gradient(#7793a2, #fff, #7793a2, #9abcce);
+	background-image: -moz-linear-gradient(#7793a2, #fff, #7793a2, #9abcce);
+	background-image: -webkit-linear-gradient(#7793a2, #fff, #7793a2, #9abcce);
+}
+
+nav#hauptnavi li:hover {
+	background-image: linear-gradient(#e5c134, #fff, #e5c134, #ffe069);
+	background-image: -moz-linear-gradient(#e5c134, #fff, #e5c134, #ffe069);
+	background-image: -webkit-linear-gradient(#e5c134, #fff, #e5c134, #ffe069);
+}
+
+li.active {
+	background-image: linear-gradient(#e5c134, #fff, #e5c134, #ffe069);
+	background-image: -moz-linear-gradient(#e5c134, #fff, #e5c134, #ffe069);
+	background-image: -webkit-linear-gradient(#e5c134, #fff, #e5c134, #ffe069);
+}
+
+#linke_spalte {
+	border: 1px solid #333;
+	background-color: #adbdc5;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #333;
+}
+
+#linke_spalte ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#linke_spalte ul li {}
+#linke_spalte ul li:hover {
+	background-color: #87a8b9;
+}
+
+#linke_spalte ul li:first-child {
+	border-top-left-radius: 7px;
+		-webkit-border-top-left-radius: 7px;
+		-moz-border-radius-topleft: 7px;
+	border-top-right-radius: 7px;
+		-webkit-border-top-right-radius: 7px;
+		-moz-border-radius-topright: 7px;
+}
+
+#linke_spalte ul li:last-child {
+	border-bottom-left-radius: 7px;
+		-webkit-border-bottom-left-radius: 7px;
+		-moz-border-radius-bottomleft: 7px;
+	border-bottom-right-radius: 7px;
+		-webkit-border-bottom-right-radius: 7px;
+		-moz-border-radius-bottomright: 7px;
+}
+
+#linke_spalte ul li a {
+	text-decoration: none;
+	padding: 0.5rem 1rem 0.5rem 1rem;
+	display: block;
+}
+
+main {
+	background-color: rgba(255, 255, 255, .6);
+}
+
+main h1 {
+	font-size: 2rem;
+}
+
+main p {
+	line-height: 1.6rem;
+}
+
+main p a {
+	text-decoration: none;
+	color: #a00000;
+}
+main p a:hover {
+	text-decoration: underline;
+}
+
+main .zweispaltig {
+	width: 100%
+	
+	-webkit-column-count: 2;
+	-webkit-column-gap: 1rem;
+	-webkit-column-rule: 1px solid #333;
+	
+	-moz-column-count: 2;
+	-moz-column-gap: 1rem;
+	-moz-column-rule: 1px solid #333;
+
+	column-count: 2;
+	column-gap: 1rem;
+	column-rule: 1px solid #333;
+}
+
+main .zweispaltig p::first-letter {
+	color: #a00000;
+}
+
+main .zweispaltig p {
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+	text-align: justify;
+}
+
+main a.linkbox {
+	position: relative;
+	color: rgba(51, 51, 51, 1);
+	margin-bottom: 1.5rem;
+	border: 1px solid #333;
+	background-color: #adbdc5;
+	text-decoration: none;
+	display: block;
+	min-height: 3.5rem;
+	padding-left: 3.6rem;
+	line-height: auto;
+	background-image: url(../media/icon_pdf.png);
+	background-repeat: no-repeat;
+	background-position: 0.3rem, 0.5rem, 0;
+}
+
+main a.linkbox h2 {
+	display: block;
+	font: 1rem #a00000;
+	margin-bottom: 0.5rem;
+	line-height: 1rem;
+}
+
+main a.linkbox span {
+	color: #fff;
+	font-weight: bold;
+	padding: 0.4rem;
+	border: 1px solid #333;
+	background-color: #87a8b9;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: -0.6rem;
+	right: -2rem;
+	opacity: 0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+main a.linkbox:hover span {
+	display: block;
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	transition: opacity 0.5s linear;
+	opacity: 1;
+}
+
+main a.linkbox:hover, main a.linkbox span {
+	-webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 3px 4px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.4) 0 3px 4px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0 3px 4px;
+}
+
+aside article {
+	border: 1px solid #333;
+	margin-bottom: 2rem;
+	padding: 0.5rem 1rem 0 1rem;	
+	background-color: rgba(255, 255, 255, 0.4);
+	position: relative;
+}
+
+aside article h1 {
+	margin: 0;
+	color: #fff;
+	font-size: 1rem;
+	border: 1px solid #333;
+	background-color: #6e8896;
+	padding: 0.2rem 0.5rem;
+	position: absolute;
+	top: -0.7rem;
+	left: 0.7rem;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+aside article p {
+	padding: 1rem;
+}
