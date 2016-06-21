@@ -56,6 +56,8 @@ p {
 
 #name {
 	// Eigenschaften
+	float: left;
+	
 	h1 {
 		font-size: 2.5rem;
 		font-weight: 700;
@@ -85,10 +87,6 @@ p {
 		-moz-border-radius: 50px;
 		-webkit-border-radius: 50px;
 	}
-}
-
-#name {
-	float: left;
 }
 
 #contactDetails {
@@ -162,17 +160,27 @@ section {
 }
 
 .keySkills {
+	@colSkill: 2;
+	@colGap: 10rem;
+	
 	list-style-type: none;
-	-moz-column-count:3;
-	-webkit-column-count:3;
-	column-count:3;
+	-moz-column-count:@colSkill;
+	-webkit-column-count:@colSkill;
+	column-count:@colSkill;
+	-moz-column-gap: @colGap;
+	-webkit-column-gap: @colGap;
+	column-gap: @colGap;
 	margin-bottom: 20px;
 	font-size: 1rem;
 	color: @pColor;
-}
-
-.keySkills ul li {
-	margin-bottom: 3px;
+	text-align: right;
+	float: left;
+	
+	ul {
+		li {
+			margin-bottom: 3px;
+		}
+	}
 }
 
 @media all and (min-width: 602px) and (max-width: 800px) {
