@@ -1,6 +1,7 @@
 // Farben
 @bodyColorBG: #181818;
 @bodyColor: #222;
+@pageColor: #f3f3f3;
 @pColor: #444;
 @mainColor: #cf8a05;
 // Schriften
@@ -40,8 +41,11 @@ p {
 #cv {
 	width: 90%;
 	max-width: 800px;
-	background: #f3f3f3;
+	background: @pageColor;
 	margin: 30px auto;
+	box-shadow: 0px 0px 4px @pageColor;
+	-moz-box-shadow: 0px 0px 4px @pageColor;
+	-webkit-box-shadow: 0px 0px 4px @pageColor;
 }
 
 .mainDetails {
