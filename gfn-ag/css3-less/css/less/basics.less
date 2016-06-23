@@ -47,7 +47,8 @@ p:last-child {
 //Suchfeld:
 input {
     &[type="search"] {
-        font-size: 16px;
+        font-size: 16px; /* IE Fallback */
+		font-size: 1rem;
 		width: @searchWidth;
 		position: absolute;
 		bottom: 22px;

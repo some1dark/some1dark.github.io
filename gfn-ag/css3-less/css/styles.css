@@ -18,7 +18,7 @@ html {
 body {
   font-size: 1em;
   color: #333;
-  font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Verdana, Helvetica, Arial, sans-serif;
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Verdana, Helvetica, Arial, sans-serif;
   text-align: left;
   margin: 0 auto;
   width: 90%;
@@ -72,6 +72,8 @@ p:last-child {
 }
 input[type="search"] {
   font-size: 16px;
+  /* IE Fallback */
+  font-size: 1rem;
   width: 40%;
   position: absolute;
   bottom: 22px;
