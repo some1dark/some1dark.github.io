@@ -1,0 +1,106 @@
+/*	CSS by Stephen James Morris 	*/
+/* Variables */
+/* Fonts */
+@font-face {
+  font-family: "UglyQua";
+  src: url("../fonts/UglyQua.eot");
+  src: url("../fonts/UglyQua.eot#iefix") format("embedded-opentype"), url("../fonts/UglyQua.svg") format("svg"), url("../fonts/UglyQua.woff") format("woff"), url("../fonts/UglyQua.ttf") format("truetype");
+}
+/* Basics */
+* {
+  margin: 0;
+}
+html {
+  font-size: 100%;
+  height: 100%;
+  padding: 0;
+}
+body {
+  font-size: 1em;
+  color: #333;
+  font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Verdana, Helvetica, Arial, sans-serif;
+  text-align: left;
+  margin: 0 auto;
+  width: 90%;
+  min-width: 320px;
+  max-width: 1600px;
+  background-attachment: fixed;
+  background-image: -webkit-linear-gradient(0deg, #eff0f1, #c7cacf);
+  background-image: -moz-linear-gradient(0deg, #eff0f1, #c7cacf);
+  background-image: -ms-linear-gradient(0deg, #eff0f1, #c7cacf);
+  background-image: -o-linear-gradient(0deg, #eff0f1, #c7cacf);
+  background-image: linear-gradient(0deg, #eff0f1, #c7cacf);
+  -webkit-box-shadow: 0px 0px 8px #000000;
+  -moz-box-shadow: 0px 0px 8px #000000;
+  -ms-box-shadow: 0px 0px 8px #000000;
+  -o-box-shadow: 0px 0px 8px #000000;
+  box-shadow: 0px 0px 8px #000000;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+strong,
+b {
+  font-weight: bold;
+}
+em,
+i,
+cite,
+figcaption {
+  font-style: italic;
+}
+small {
+  font-size: 0.8rem;
+}
+h1 {
+  font-family: UglyQua;
+  font-weight: normal;
+  font-style: normal;
+}
+p:last-child {
+  margin-bottom: 0 !important;
+}
+input[type="search"] {
+  font-size: 16px;
+  width: 40%;
+  position: absolute;
+  bottom: 22px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  -moz-appearance: searchfield;
+  -moz-box-sizing: border-box;
+}
+@media (-webkit-min-device-pixel-ratio: 0) {
+  input[type="search"] {
+    font-size: large;
+  }
+}
+input:-moz-placeholder {
+  color: #a9a9a9;
+}
+.italic {
+  font-style: italic;
+}
+/* Layout */
+header {
+  height: 20rem;
+  background-image: url(../img/flowers.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* Content */
+/* Forms */
+/* Mixins */
+/* Media Queries */

@@ -1,0 +1,46 @@
+/* Mixins */
+.clearfix() {
+    &:after {
+        content: ". ";
+        display: block;
+        height: 0;
+        line-height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+}
+
+.hyphens() {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+.body () {
+	color: #333;
+	font-family: @basicFonts;
+	text-align: left;
+	margin: @autoMargin;
+	width: @bodyWidth;
+	min-width: @minWidth;
+	max-width: @maxWidth;
+	background-attachment: fixed;
+	
+	.bodyGradient;
+	.bodyShadow;
+}
+
+.bodyGradient () {
+	background-image: -webkit-linear-gradient(@deg, @color-1, @color-2);
+	background-image: -moz-linear-gradient(@deg, @color-1, @color-2);
+	background-image: -ms-linear-gradient(@deg, @color-1, @color-2);
+	background-image: -o-linear-gradient(@deg, @color-1, @color-2);
+	background-image: linear-gradient(@deg, @color-1, @color-2);
+}
+
+.bodyShadow () {
+	-webkit-box-shadow: @bsX @bsY @bsB @bsC;
+	-moz-box-shadow: @bsX @bsY @bsB @bsC;
+	-ms-box-shadow: @bsX @bsY @bsB @bsC;
+	-o-box-shadow: @bsX @bsY @bsB @bsC;
+	box-shadow: @bsX @bsY @bsB @bsC;
+}
