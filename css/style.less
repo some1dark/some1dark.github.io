@@ -7,7 +7,6 @@
 // Schriften
 @bodyFont: 'Lato', helvetica, arial, sans-serif;
 @titleFont: 'Rokkitt', Helvetica, Arial, sans-serif;
-@adobeFont: "skolar-sans-latin",sans-serif;
 // Größen
 
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
@@ -62,13 +61,13 @@ p {
 	h1 {
 		font-size: 2.5rem;
 		font-weight: 700;
-		font-family: @adobeFont;
+		font-family: @titleFont;
 		margin-bottom: -6px;
 	}
 	h2 {
 		font-size: 2rem;
 		margin-left: 2px;
-		font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+		font-family: @titleFont;
 	}
 }
 
@@ -162,7 +161,7 @@ section {
 
 .keySkills {
 	@colSkill: 2;
-	@colGap: 10rem;
+	@colGap: 4rem;
 	
 	list-style-type: none;
 	-moz-column-count:@colSkill;
@@ -250,9 +249,14 @@ section {
 	column-count:1;
 	}
 	
-	#name h1 {
-		line-height: 0.8rem;
-		margin-bottom: 4px;
+	#name{
+		 h1 {
+			line-height: 1.75rem;
+			margin-bottom: 4px;
+		}
+		h2 {
+			line-height: 1.25rem;
+		}
 	}
 }
 
@@ -381,4 +385,9 @@ section {
 	-webkit-animation-delay: 0, 2.5s;
 	-moz-animation-delay: 0, 2.5s;
 	animation-delay: 0, 2.5s;
+}
+
+/* SKILL BAR */
+progress {
+	width: 8rem;
 }
