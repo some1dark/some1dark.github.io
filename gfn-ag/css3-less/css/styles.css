@@ -6,6 +6,21 @@
   src: url("../fonts/UglyQua.eot");
   src: url("../fonts/UglyQua.eot#iefix") format("embedded-opentype"), url("../fonts/UglyQua.svg") format("svg"), url("../fonts/UglyQua.woff") format("woff"), url("../fonts/UglyQua.ttf") format("truetype");
 }
+a#title {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+}
+a#title h1 {
+  font-size: 10rem;
+  line-height: 2rem;
+  text-align: center;
+  -webkit-text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+  -moz-text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+  -ms-text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+  -o-text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
 /* Basics */
 * {
   margin: 0;
