@@ -1,0 +1,29 @@
+// LESS Mixins
+
+// Shadows
+.box-shadow(@color; @blur) {
+	-webkit-box-shadow: 0 0 @blur @color;
+	-moz-box-shadow: 0 0 @blur @color;
+	-ms-box-shadow: 0 0 @blur @color;
+	-o-box-shadow: 0 0 @blur @color;
+	box-shadow: 0 0 @blur @color;
+}
+
+// Gradients
+.bg-gradient(@deg; @rgb1; @rgb2) {
+	
+	background-image: -webkit-linear-gradient(@deg, @rgb1, @rgb2);
+	background-image: -moz-linear-gradient(@deg, @rgb1, @rgb2);
+	background-image: -ms-linear-gradient(@deg, @rgb1, @rgb2);
+	background-image: -o-linear-gradient(@deg, @rgb1, @rgb2);
+	background-image: linear-gradient(@deg, @rgb1, @rgb2);
+}	
+
+.footer-bg-gradient(@deg2; @rgb12; @rgb22) {
+	
+	background-image: -webkit-linear-gradient(@deg2, @rgb12, @rgb22);
+	background-image: -moz-linear-gradient(@deg2, @rgb12, @rgb22);
+	background-image: -ms-linear-gradient(@deg2, @rgb12, @rgb22);
+	background-image: -o-linear-gradient(@deg2, @rgb12, @rgb22);
+	background-image: linear-gradient(@deg2, @rgb12, @rgb22);
+}

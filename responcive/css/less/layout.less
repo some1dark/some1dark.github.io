@@ -1,0 +1,105 @@
+// LESS Layout
+
+// Responcive Grid
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+// Header
+header {
+	padding: 10rem;
+	background-image: url(../img/css-header.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+// Main Navigation
+nav {
+	width: 100%;
+}
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: @color6;
+	border-top: 1px solid @color8;
+	border-bottom: 1px solid @color8;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: @color1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: @color8;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+// SUB NAVIGATION
+.sub-nav {
+	text-align: center;
+	clear: right;
+	padding: 30px 15px 30px 15px; // TOP | Right | Bottom | Left
+	
+	&:hover {
+		background-color: @color3;
+		.box-shadow (@color5; 4px);
+	}
+}
+
+// HR Styles
+hr.style2 {
+	border: 0; 
+	height: 1px; 
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
+}
+
+// Footer
+footer {
+	.footer-bg-gradient(@deg; @color6; @color8;);
+	
+	p.copy {
+		padding: 1rem 3rem; // TOP | Right | Bottom | Left
+		text-align: center;
+		color: @color5;
+	}
+}
+
+.main {
+	padding: 2.7	5rem;
+}

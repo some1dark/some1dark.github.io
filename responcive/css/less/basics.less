@@ -1,0 +1,83 @@
+// LESS Basics
+// Stephen James Morris
+
+/* Basics */
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+// Allgemein:
+
+* {
+    margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+    font-size: 65.5%;	// Hier die größe auf 65.2% setzen damit der em & rem 10px entspricht
+    height: 100%; 		// Erleichtert einige Gestaltungsprobleme
+    padding: 0;
+	//background-color: @color2;
+	background-attachment: fixed;
+	.bg-gradient(@deg; @color1; @color6);
+	
+}
+
+body {
+    font-size: 1em;		// Entspricht 10px
+	font-family: 'Open Sans', sans-serif;
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: @color1;
+	.box-shadow (@color6; 8px);
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    //neue HTML5-Blockelemente
+    display: block;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+em, i, cite, figcaption {
+    font-style: italic;
+}
+
+small {
+    font-size: 0.8rem;
+}
+
+h1 {
+    font-family: @SpaceMono;
+    font-weight: normal;
+    font-style: normal;
+	color: @color8;
+}
+
+p {
+	font-size: 1.125rem;
+}
+
+p:last-child {
+    margin-bottom: 0 !important; //letzter Absatz soll Elemente nicht zusätzlich vergrößern
+}
+
+// Klassen:
+
+.italic {
+    font-style: italic;
+}
+
+.image_right {
+    
+}
+section.top {
+	margin-top: 10;
+}

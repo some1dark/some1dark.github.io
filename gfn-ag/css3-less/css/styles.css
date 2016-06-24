@@ -6,11 +6,13 @@
   src: url("../fonts/UglyQua.eot");
   src: url("../fonts/UglyQua.eot#iefix") format("embedded-opentype"), url("../fonts/UglyQua.svg") format("svg"), url("../fonts/UglyQua.woff") format("woff"), url("../fonts/UglyQua.ttf") format("truetype");
 }
+/* line 14, less\fonts.less */
 a#title {
   color: #ffffff;
   text-decoration: none;
   display: block;
 }
+/* line 17, less\fonts.less */
 a#title h1 {
   font-size: 160px;
   font-size: 10rem;
@@ -23,14 +25,17 @@ a#title h1 {
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
 }
 /* Basics */
+/* line 5, less\basics.less */
 * {
   margin: 0;
 }
+/* line 9, less\basics.less */
 html {
   font-size: 100%;
   height: 100%;
   padding: 0;
 }
+/* line 15, less\basics.less */
 body {
   font-size: 1em;
   color: #333;
@@ -52,6 +57,7 @@ body {
   -o-box-shadow: 0px 0px 8px #000000;
   box-shadow: 0px 0px 8px #000000;
 }
+/* line 20, less\basics.less */
 article,
 aside,
 details,
@@ -65,27 +71,33 @@ section,
 summary {
   display: block;
 }
+/* line 25, less\basics.less */
 strong,
 b {
   font-weight: bold;
 }
+/* line 29, less\basics.less */
 em,
 i,
 cite,
 figcaption {
   font-style: italic;
 }
+/* line 33, less\basics.less */
 small {
   font-size: 0.8rem;
 }
+/* line 37, less\basics.less */
 h1 {
   font-family: UglyQua;
   font-weight: normal;
   font-style: normal;
 }
+/* line 43, less\basics.less */
 p:last-child {
   margin-bottom: 0 !important;
 }
+/* line 49, less\basics.less */
 input[type="search"] {
   font-size: 16px;
   /* IE Fallback */
@@ -100,17 +112,21 @@ input[type="search"] {
   -moz-box-sizing: border-box;
 }
 @media (-webkit-min-device-pixel-ratio: 0) {
+  /* line 63, less\basics.less */
   input[type="search"] {
     font-size: large;
   }
 }
+/* line 68, less\basics.less */
 input:-moz-placeholder {
   color: #a9a9a9;
 }
+/* line 75, less\basics.less */
 .italic {
   font-style: italic;
 }
 /* Layout */
+/* line 3, less\layout.less */
 header {
   height: 20rem;
   background-image: url(../img/flowers.jpg);
@@ -118,6 +134,7 @@ header {
   background-size: cover;
   position: relative;
 }
+/* line 11, less\layout.less */
 nav {
   position: absolute;
   top: 0;
@@ -131,6 +148,7 @@ nav {
   background-image: linear-gradient(0deg, #fafafa, #e9eaeb);
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.4);
 }
+/* line 24, less\layout.less */
 nav ul {
   display: table;
   margin: 0 auto;
@@ -139,6 +157,7 @@ nav ul {
   list-style: outside none none;
   margin-left: -2.5rem;
 }
+/* line 32, less\layout.less */
 nav ul li {
   border: 1px solid #bbb;
   text-align: center;
@@ -146,6 +165,7 @@ nav ul li {
   line-height: 1.7rem;
   width: auto;
 }
+/* line 39, less\layout.less */
 nav ul li a {
   height: 1.7rem;
   text-decoration: none;
@@ -154,3 +174,4 @@ nav ul li a {
 /* Forms */
 /* Mixins */
 /* Media Queries */
+/*# sourceMappingURL=styles.css.map */
