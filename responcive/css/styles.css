@@ -158,6 +158,54 @@ section.top {
   text-align: center;
   background-color: #d9d9db;
 }
+.npp {
+  background-image: url(../img/Notepad_plus_plus.png);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+.textwangler {
+  background-image: url(../img/textwrangler_app.png);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+.brackets {
+  background-image: url(../img/Brackets_Icon.svg.png);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+.coda {
+  background-image: url(../img/App-Coda-Icon.png);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+.sublime {
+  background-image: url(../img/SublimeTextLogo.png);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+.komodo {
+  background-image: url(../img/komodo.png);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+.netbeans {
+  background-image: url(../img/netbeans-icon.png);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+.eclype {
+  background-image: url(../img/eclipse256.png);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
 .divTableHeading {
   background-color: #EEE;
   display: table-header-group;

@@ -35,3 +35,8 @@
 	-o-border-radius: @size;
 	border-radius: @size;
 }
+
+.bg-img(@img) {
+	@imgBase: "../img/";
+	background-image: url("@{imgBase}@{img}")
+}
