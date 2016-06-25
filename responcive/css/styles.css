@@ -324,6 +324,13 @@ ol.inhalt li:nth-child(odd) {
 ol.inhalt li:nth-child(odd):hover {
   background: #d9d9db;
 }
+div.socials {
+  background-color: #d9d9db;
+  min-height: 5.6rem;
+  vertical-align: middle;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
 header h1 {
   text-align: center;
   font-size: 3rem;
