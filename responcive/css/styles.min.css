@@ -87,7 +87,8 @@ footer div.row ul li a:hover{color:#e8ede9}
 footer div.row ul li a i.fa{padding-right:1rem;margin-left:.5rem}
 @media screen and (max-width:680px){ul.topnav li:not(:first-child){display:none}
 ul.topnav li.icon{float:right;display:inline-block}
-[class*=col-]{float:none;padding:15px;width:100%}}
+[class*=col-]{float:none;padding:15px;width:100%}
+div.col-4,fix{display:none}}
 @media screen and (max-width:680px){ul.topnav.responsive{position:relative;width:100%}
 ul.topnav.responsive li.icon{position:absolute;right:0;top:0}
 ul.topnav.responsive li{float:none;display:inline}
