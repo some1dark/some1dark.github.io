@@ -160,49 +160,49 @@ section.top {
 }
 .npp {
   background-image: url(../img/Notepad_plus_plus.png);
-  background-size: 40px 40px;
+  background-size: 40px auto;
   background-repeat: no-repeat;
   background-position: 95% center;
 }
 .textwangler {
   background-image: url(../img/textwrangler_app.png);
-  background-size: 40px 40px;
+  background-size: 40px auto;
   background-repeat: no-repeat;
   background-position: 95% center;
 }
 .brackets {
   background-image: url(../img/Brackets_Icon.svg.png);
-  background-size: 40px 40px;
+  background-size: 40px auto;
   background-repeat: no-repeat;
   background-position: 95% center;
 }
 .coda {
   background-image: url(../img/App-Coda-Icon.png);
-  background-size: 40px 40px;
+  background-size: 40px auto;
   background-repeat: no-repeat;
   background-position: 95% center;
 }
 .sublime {
   background-image: url(../img/SublimeTextLogo.png);
-  background-size: 40px 40px;
+  background-size: 40px auto;
   background-repeat: no-repeat;
   background-position: 95% center;
 }
 .komodo {
   background-image: url(../img/komodo.png);
-  background-size: 40px 40px;
+  background-size: 40px auto;
   background-repeat: no-repeat;
   background-position: 95% center;
 }
 .netbeans {
   background-image: url(../img/netbeans-icon.png);
-  background-size: 40px 40px;
+  background-size: 40px auto;
   background-repeat: no-repeat;
   background-position: 95% center;
 }
 .eclype {
   background-image: url(../img/eclipse256.png);
-  background-size: 40px 40px;
+  background-size: 40px auto;
   background-repeat: no-repeat;
   background-position: 95% center;
 }
@@ -293,6 +293,9 @@ footer {
   background-image: -ms-linear-gradient(180deg, #1d2f43, #10203a);
   background-image: -o-linear-gradient(180deg, #1d2f43, #10203a);
   background-image: linear-gradient(180deg, #1d2f43, #10203a);
+  -webkit-box-shadow: inset 0px 3px 3px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px 3px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 3px 3px 0px rgba(0, 0, 0, 0.75);
 }
 footer p.copy {
   padding: 1rem 3rem;
@@ -300,7 +303,7 @@ footer p.copy {
   color: #435e69;
 }
 .main {
-  padding: 2.7	5rem;
+  padding: 2.7 5rem;
 }
 ol.inhalt {
   line-height: 2rem;
