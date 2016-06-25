@@ -40,6 +40,21 @@
 	border: 1px solid #999999;
 	display: table-cell;
 	padding: 3px 10px;
+	line-height: 2rem;
+	vertical-align: middle;
+}
+.platforms {
+	text-align: center;
+	color: @color4;
+	
+	.active {
+		color: @color7;
+	}
+}
+.dth {
+	font-size: 1.25rem;
+	text-align: center;
+	background-color: @color3;
 }
 .divTableHeading {
 	background-color: #EEE;
@@ -58,11 +73,12 @@
 // Header
 header {
 	padding: 10rem;
-	background-image: url(../img/css-header.jpg);
-	background-position: center center;
+	background-image: url(../img/negativespace.jpg);
+	background-position: bottom left;
 	background-repeat: no-repeat;
-	background-attachment: scroll;
+	background-attachment: fixed;
 	background-size: cover;
+	height: 450px;
 }
 
 // Main Navigation
@@ -135,4 +151,30 @@ footer {
 
 .main {
 	padding: 2.7	5rem;
+}
+
+ol.inhalt {
+	//margin-left: 2.75rem;
+	line-height: 2rem;
+	
+	li {
+		font-size: 1rem;	
+		padding-left: 1.25rem;
+		
+		a {
+			text-decoration: none;
+		}
+		
+		&:hover {
+			background: @color3;
+		}
+	}
+	li:nth-child(odd) {
+		background: @color2;
+		
+		&:hover {
+			background: @color3;
+		}
+	}
+
 }

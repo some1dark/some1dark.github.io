@@ -143,6 +143,20 @@ section.top {
   border: 1px solid #999999;
   display: table-cell;
   padding: 3px 10px;
+  line-height: 2rem;
+  vertical-align: middle;
+}
+.platforms {
+  text-align: center;
+  color: #a4c6cf;
+}
+.platforms .active {
+  color: #102739;
+}
+.dth {
+  font-size: 1.25rem;
+  text-align: center;
+  background-color: #d9d9db;
 }
 .divTableHeading {
   background-color: #EEE;
@@ -159,11 +173,12 @@ section.top {
 }
 header {
   padding: 10rem;
-  background-image: url(../img/css-header.jpg);
-  background-position: center center;
+  background-image: url(../img/negativespace.jpg);
+  background-position: bottom left;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-size: cover;
+  height: 450px;
 }
 nav {
   width: 100%;
@@ -239,6 +254,25 @@ footer p.copy {
 .main {
   padding: 2.7	5rem;
 }
+ol.inhalt {
+  line-height: 2rem;
+}
+ol.inhalt li {
+  font-size: 1rem;
+  padding-left: 1.25rem;
+}
+ol.inhalt li a {
+  text-decoration: none;
+}
+ol.inhalt li:hover {
+  background: #d9d9db;
+}
+ol.inhalt li:nth-child(odd) {
+  background: #e8ede9;
+}
+ol.inhalt li:nth-child(odd):hover {
+  background: #d9d9db;
+}
 header h1 {
   text-align: center;
   font-size: 3rem;
@@ -255,6 +289,10 @@ header h1 {
   -ms-box-shadow: 0 0 1rem #a4c6cf;
   -o-box-shadow: 0 0 1rem #a4c6cf;
   box-shadow: 0 0 1rem #a4c6cf;
+}
+b,
+strong {
+  font-weight: bolder;
 }
 section div.row div.col-4 p {
   font-size: 1.15rem;
