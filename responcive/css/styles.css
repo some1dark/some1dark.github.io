@@ -352,6 +352,15 @@ b,
 strong {
   font-weight: bolder;
 }
+section div.row div#grundlagen.col-8 article#brackets ul {
+  margin-top: 1rem;
+  margin-left: -2rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #435e69;
+}
+section div.row div#grundlagen.col-8 article#brackets ul li {
+  list-style-type: circle;
+}
 section div.row div.col-4 p {
   font-size: 1.15rem;
   font-family: 'Open Sans', sans-serif;
@@ -385,6 +394,8 @@ section div.row div.main h2 {
 }
 section div.row div.main h3 {
   font-size: 3rem;
+  font-family: 'Space Mono', monospace;
+  color: #1d2f43;
 }
 section div.row div.main h4 {
   font-size: 2.5rem;
@@ -437,6 +448,13 @@ footer div.row ul li a:hover {
 footer div.row ul li a i.fa {
   padding-right: 1rem;
   margin-left: 0.5rem;
+}
+figcaption {
+  float: right;
+  clear: both;
+}
+mark {
+  background-color: #d9d9db;
 }
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
 @media screen and (max-width: 680px) {

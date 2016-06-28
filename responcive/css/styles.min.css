@@ -66,12 +66,14 @@ ol.inhalt li:nth-child(odd):hover{background:#d9d9db}
 div.socials{background-color:#d9d9db;min-height:5.6rem;vertical-align:middle;text-align:center;font-family:'Open Sans',sans-serif}
 header h1{text-align:center;font-size:3rem;color:#a4c6cf;background-color:#10203a;line-height:8rem;-webkit-border-radius:.5rem;-moz-border-radius:.5rem;-ms-border-radius:.5rem;-o-border-radius:.5rem;border-radius:.5rem;-webkit-box-shadow:0 0 1rem #a4c6cf;-moz-box-shadow:0 0 1rem #a4c6cf;-ms-box-shadow:0 0 1rem #a4c6cf;-o-box-shadow:0 0 1rem #a4c6cf;box-shadow:0 0 1rem #a4c6cf}
 b,strong{font-weight:bolder}
+section div.row div#grundlagen.col-8 article#brackets ul{margin-top:1rem;margin-left:-2rem;font-family:'Open Sans',sans-serif;color:#435e69}
+section div.row div#grundlagen.col-8 article#brackets ul li{list-style-type:circle}
 section div.row div.col-4 p{font-size:1.15rem;font-family:'Open Sans',sans-serif;line-height:1.4rem;color:#435e69;padding-top:1rem;float:right;padding-right:5.5rem}
 section div.row div.col-4 h4{font-size:2rem;padding:2.25rem;font-family:'Space Mono',monospace;color:#435e69;text-align:center}
 section div.row div.main p{font-size:1.15rem;font-family:'Open Sans',sans-serif;line-height:1.4rem;color:#435e69;padding-top:1rem}
 section div.row div.main h1{font-size:4rem;color:#1d2f43;font-weight:700}
 section div.row div.main h2{font-size:3.5rem}
-section div.row div.main h3{font-size:3rem}
+section div.row div.main h3{font-size:3rem;font-family:'Space Mono',monospace;color:#1d2f43}
 section div.row div.main h4{font-size:2.5rem}
 section div.row div.main h5{font-size:2rem}
 section div.row div.main h6{font-size:1.5rem}
@@ -85,6 +87,8 @@ footer div.row ul li{border-bottom:1px solid #435e69;font-size:1.333rem;list-sty
 footer div.row ul li a{text-decoration:none;color:#435e69}
 footer div.row ul li a:hover{color:#e8ede9}
 footer div.row ul li a i.fa{padding-right:1rem;margin-left:.5rem}
+figcaption{float:right;clear:both}
+mark{background-color:#d9d9db}
 @media screen and (max-width:680px){ul.topnav li:not(:first-child){display:none}
 ul.topnav li.icon{float:right;display:inline-block}
 [class*=col-]{float:none;padding:15px;width:100%}
