@@ -172,7 +172,6 @@ ul.topnav li.icon {display: none;}
 	text-align: center;
 	clear: right;
 	padding: 30px 15px 30px 15px; // TOP | Right | Bottom | Left
-	text-shadow: 0px 0px 2px #222;
 	
 	&:hover {
 		background-color: @color3;
@@ -215,6 +214,7 @@ ol.inhalt {
 		
 		a {
 			text-decoration: none;
+			display: block; // Makes the entire field clickable
 		}
 		
 		&:hover {
@@ -239,6 +239,10 @@ div.socials {
 	font-family: @OpenSans;
 	div {
 		a {
+			
+		&:hover {
+			color: @color5;
+		}
 			i {
 				p {
 					
@@ -248,3 +252,5 @@ div.socials {
 	}
 
 }
+
+.block { display: block;}

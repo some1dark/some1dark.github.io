@@ -3,6 +3,8 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
   <title>Die HTML5 &amp; CSS3+LESS Anleitung</title>
   <meta name="description" content="Die HTML5 & CSS3+LESS Anleitung">
@@ -232,7 +234,7 @@
 					</p>
 					<br>
 					<figure>
-						<img src="img/brackets-1.jpg" alt="Adobe Brackets GUI" />
+						<img class="img-shadow" src="img/brackets-1.jpg" alt="Adobe Brackets GUI" />
 						<figcaption>Abbildung 1.0 - Adobe Brackets</figcaption>
 					</figure>
 					<br>
@@ -242,7 +244,7 @@
 					<p>Brackets bietet bietet einem eine Live-Ansicht die derzeit nur in Google Chrome verfügbar ist. Weite Browseruntestüzung ist für die Zukunft geplant. Das besondere an der Live-Ansicht ist das Brackets dynamisch die Elemente in Chrome hervorhebt wo sich der Browser in Quellcode befindet. Dieses gild für die HTML undd CSS Datei.</p>
 					<br>
 					<figure>
-						<img src="img/brackets-2.jpg" alt="Adobe Brackets Live-Ansicht" />
+						<img class="img-shadow" src="img/brackets-2.jpg" alt="Adobe Brackets Live-Ansicht" />
 						<figcaption>Abbildung 1.1 - Adobe Brackets Live-Ansicht</figcaption>
 					</figure>
 					<br>
@@ -252,7 +254,7 @@
 					<p>In der Regel bestehen Webprojekte aus mehreren Datein die miteinander Verknüpft sind. In Brackets kann man in der HTML verknüpfte CSS und JavaScript Datein mit Hilfe des Inline-Editors bearbeiten ohne direkt in die dazu geörende Datei zu wechseln. Um ein Element direkt zu bearbeiten einfach selektieren und <b>Strg-E</b> (Windows) und <b>CMD-E</b> (Mac) drücken.</p>
 					<br>
 					<figure>
-						<img src="img/brackets-3.jpg" alt="Adobe Brackets Quick Edit" />
+						<img class="img-shadow" src="img/brackets-3.jpg" alt="Adobe Brackets Quick Edit" />
 						<figcaption>Abbildung 1.2 - Adobe Brackets Quick Edit</figcaption>
 					</figure>
 					<br>
@@ -272,10 +274,49 @@
 					<p>Um Brackets mit weiteren Features auszustatten müsst ihr im oberen Rechten Teil des Fensters auf den Baustein clicken. Dort könnt ihr nach Erweiterungen suchen und installieren.</p>
 					<br>
 					<figure>
-						<img src="img/brackets-4.jpg" alt="Adobe Brackets Features" />
+						<img class="img-shadow" src="img/brackets-4.jpg" alt="Adobe Brackets Features" />
 						<figcaption>Abbildung 1.3 - Adobe Brackets Features</figcaption>
 					</figure>
 					<br>
+					
+				</article>
+				
+				<article  id="wysiwyg">
+					<h3>WYSIWYG-Editoren</h3>
+					
+					<p>					
+						<abbr title="What You See Is What You Get">WYSIWYG</abbr> Editoren sind graphisch orientierte Editoren die es erlauben seine HTML-Seiten wie in einem Layout- oder Satzprogramm auf visueller Basis zu gestalten. Ich werde nicht weiter auf diese Editoren eingehen da sie meines erachtens nach nicht geeignet sind um Webdesign zu lernen obwohl sie einem ein gutes Verständnis dafür geben können wie eine Website aufgebaut ist.
+					</p>
+					<br>
+					
+				</article>
+				
+				<article  id="html-datein">
+					<h3>Bestandteile der HTML-Datein</h3>
+					
+					<p>					
+						Jede Webseite ist im grunde eine HTML-Datei. Die HTML-Datei ist eine Text-Datei mit der Dateiendung *.html oder *.htm und ist befüllt mit HTML-Tags &amp; Inhalt die dem Brwoser angeben wie der Inhalt wiederzugeben ist. Anders gesagt, HTML sind in einem Format angelegt um den Browser Anleitungen zu geben wie er alles anzeigen soll.
+					</p>
+					<br>
+					<h4>Tags</h4>
+					
+					<p>
+						Die Primäre Aufgabe des Browsers ist es HTML Dokumente darzustellen. Unerheblich ist es dabei ob sich die HTML-Datein lokal auf dem eigenen Rechner oder auf einem Server um die habe Welt liegen. Die HTML-Datein enthalten Informations Steuerbefehle (Auszeichnungen), sogenante Tags um dem Browser zu sagen wie die Seite auszusehen hat.<br>
+						<br>
+						Der Quelltext einer HTML-Datei kann in zwei Kategorien unterteilt werden:<br>
+						<ul>
+							<li>Inhalt
+								<br>
+								<i>Normaler Text, der Information zu Seite enthält.</i>
+							</li>
+							<li>Markup
+								<br>
+								<i>Der Code, der beschreibt wie der Inhalt der Seite zu strukturieren ist.</i>
+							</li>
+						</ul>
+						<br>
+						
+					</p>
 					
 				</article>
 				
@@ -288,8 +329,8 @@
 					<ol class="inhalt">
 						<li><a href="#editor">Womit werden HTML-Seite erstellt?</a></li>
 						<li><a href="#brackets">Adobe Brackets</a></li>
-						<li>WYSIWYG-Editoren</li>
-						<li>Woraus bestehen HTML-Datein?</li>
+						<li><a href="#wysiwyg">WYSIWYG-Editoren</a></li>
+						<li><a href="#html-datein">Woraus bestehen HTML-Datein?</a></li>
 						<li>Tags</li>
 						<li>Das HTML Grundgerüst</li>
 						<li>Verschachtelte Tags</li>
@@ -318,32 +359,32 @@
 		
 		<div class="socials">
 			<div class="col-2">
-			<a href="https://www.facebook.com/stephenjamesmorris.nexus/" title="Facebook" target="_blank">
+			<a class="block" href="https://www.facebook.com/stephenjamesmorris.nexus/" title="Facebook" target="_blank">
 				<i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i>
 			</a>
 			</div>
 			<div class="col-2">
-			<a href="https://twitter.com/stephenmorris84" title="Twitter" target="_blank">
+			<a class="block" href="https://twitter.com/stephenmorris84" title="Twitter" target="_blank">
 				<i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
 			</a>
 			</div>
 			<div class="col-2">
-			<a href="https://linkedin.com/in/stephenjamesmorris" title="LinkedIn" target="_blank">
+			<a class="block" href="https://linkedin.com/in/stephenjamesmorris" title="LinkedIn" target="_blank">
 				<i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
 			</a>
 			</div>
 			<div class="col-2">
-			<a href="https://github.com/some1dark" title="GitHub" target="_blank">
+			<a class="block" href="https://github.com/some1dark" title="GitHub" target="_blank">
 				<i class="fa fa-github fa-3x" aria-hidden="true"></i>
 			</a>
 			</div>
 			<div class="col-2">
-			<a href="https://www.instagram.com/some1dark/" title="Instagram" target="_blank">
+			<a class="block" href="https://www.instagram.com/some1dark/" title="Instagram" target="_blank">
 				<i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
 			</a>
 			</div>
 			<div class="col-2" title="Google+" target="_blank">
-			<a href="https://plus.google.com/u/0/+StephenMorris84" target="_blank">
+			<a class="block" href="https://plus.google.com/u/0/+StephenMorris84" target="_blank">
 				<i class="fa fa-google-plus-square fa-3x" aria-hidden="true"></i>
 			</a>
 			</div>
