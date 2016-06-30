@@ -221,6 +221,8 @@ sup {
  */
 img {
   border-style: none;
+  width: auto;
+  height: 100%;
 }
 /**
  * Hide the overflow in IE.
@@ -418,7 +420,6 @@ textarea {
   /* 2 */
 }
 body {
-  background-color: #000;
   font-family: 'Open Sans', sans-serif;
   margin: 0 auto;
 }
@@ -453,7 +454,7 @@ div#wrapper_mid {
 }
 div#wrapper_mid #wrapper_top1 {
   min-height: 288px;
-  width: 980px;
+  max-width: 980px;
   margin: 0 auto;
 }
 div#wrapper_mid_low {
@@ -461,20 +462,38 @@ div#wrapper_mid_low {
   width: 100%;
 }
 div#wrapper_mid_low #wrapper_top2 {
-  width: 980px;
+  max-width: 980px;
   margin: 0 auto;
   padding: 1rem;
 }
 div#wrapper_mid_low #wrapper_top3 {
   width: 100%;
   background-color: #242323;
-  -webkit-box-shadow: 0 -1px 2px 2px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 -1px 2px 2px rgba(0, 0, 0, 0.75);
-  box-shadow: 0 -1px 2px 2px rgba(0, 0, 0, 0.75);
+  background-image: linear-gradient(180deg, #ffffff 8%, #242323 8%, #242323 78%, #ffffff 78%);
 }
 div#wrapper_mid_low #wrapper_top3 #wrapper_top3_inside {
   margin: 0 auto;
-  width: 980px;
+  max-width: 980px;
   text-align: center;
   position: relative;
+  background: url(../img/liftedshadow_medium.png);
+  background-repeat: no-repeat;
+  background-size: 917px;
+  min-height: 431px;
+  background-position: bottom center;
+}
+div#wrapper_mid_low #wrapper_top3 #wrapper_top3_inside img.featured {
+  border: 5px solid #000;
+  border-radius: 0.4rem;
+}
+#bar-main {
+  content: " ";
+  min-height: .8rem;
+  background-image: url(../img/bar.jpg);
+  clear: both;
+}
+article div.main-top {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1rem;
 }

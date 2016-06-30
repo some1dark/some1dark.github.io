@@ -1,7 +1,7 @@
 // LESS Layout
 
 body {
-	background-color: #000;
+	//background-color: #000;
 	font-family: @opensans;
 	margin: 0 auto;
 }
@@ -27,13 +27,6 @@ header {
 			margin: 0 auto;
 			text-align: center;
 			padding-top: 2rem;
-			
-			figure {
-				
-				img {
-					
-				}
-			}
 		}
 	}
 }
@@ -48,7 +41,7 @@ div#wrapper_mid {
 	
 	#wrapper_top1 {
 		min-height: 288px;
-		width: 980px;
+		max-width: 980px;
 		margin: 0 auto;
 	}
 }
@@ -58,7 +51,7 @@ div#wrapper_mid_low {
 	width: 100%;
 	
 	#wrapper_top2 {
-		width: 980px;
+		max-width: 980px;
 		margin: 0 auto;
 		padding: 1rem;
 	}
@@ -66,23 +59,41 @@ div#wrapper_mid_low {
 	#wrapper_top3 {
 		width: 100%;
 		background-color: @color3;
-		-webkit-box-shadow: 0 -1px 2px 2px rgba(0,0,0,0.75);
-		-webkit-box-shadow: 0 -1px 2px 2px rgba(0,0,0,0.75);
-		-moz-box-shadow: 0 -1px 2px 2px rgba(0,0,0,0.75);
-		box-shadow: 0 -1px 2px 2px rgba(0,0,0,0.75);
+		background-image: linear-gradient(180deg, #fff 8%, #242323 8%, #242323 78%, #fff 78%);
+		
 		
 		#wrapper_top3_inside {
 			margin: 0 auto;
-			width: 980px;
+			max-width: 980px;
 			text-align: center;
 			position: relative;
 			
-			div.img_container {
-								
-				img {
-
-				}
+			background: url(../img/liftedshadow_medium.png);
+			background-repeat: no-repeat;
+			background-size: 917px;
+			min-height: 431px;
+			background-position: bottom center;
+			
+			img.featured {
+				border: 5px solid #000;
+				border-radius: 0.4rem;
 			}
 		}
+	}
+}
+
+#bar-main {
+	content: " ";
+	min-height: .8rem;
+	background-image: url(../img/bar.jpg);
+	clear: both;
+}
+
+article {
+	
+	div.main-top {
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 1rem;
 	}
 }
