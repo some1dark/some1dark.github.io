@@ -221,8 +221,8 @@ sup {
  */
 img {
   border-style: none;
-  width: auto;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
 }
 /**
  * Hide the overflow in IE.
@@ -419,7 +419,6 @@ textarea {
   font: inherit;
   /* 2 */
 }
-/* Layout */
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0 auto;
@@ -446,6 +445,7 @@ header #wrapper_top div.header_logo {
   padding-top: 2rem;
 }
 div#wrapper_mid {
+  width: 100%;
   background-image: url(../img/lion_top.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -454,8 +454,7 @@ div#wrapper_mid {
   border-top: 1px solid #3c4547;
 }
 div#wrapper_mid #wrapper_top1 {
-  min-height: 288px;
-  max-width: 980px;
+  max-width: 100%;
   margin: 0 auto;
 }
 div#wrapper_mid_low {
@@ -489,7 +488,7 @@ div#wrapper_mid_low #wrapper_top3 #wrapper_top3_inside img.featured {
 }
 #bar-main {
   content: " ";
-  min-height: .8rem;
+  min-height: .65rem;
   background-image: url(../img/bar.jpg);
   clear: both;
 }
