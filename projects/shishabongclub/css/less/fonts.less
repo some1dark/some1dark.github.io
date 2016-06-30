@@ -1,6 +1,119 @@
 // LESS Fonts
 
-@import 'https://fonts.googleapis.com/css?family=Bungee|Open+Sans:400,400i';
+@import 'https://fonts.googleapis.com/css?family=Bungee|Open+Sans:400,400i|Open+Sans+Condensed:300';
 
 .bungee {font-family: 'Bungee', cursive;}
 .opensans {font-family: 'Open Sans', sans-serif;}
+.opensanscondensed {font-family: 'Open Sans Condensed', sans-serif;}
+
+body {font-family: @opensans;}
+
+header {
+	h1{}
+	h2{}
+	h3{}
+	h4{}
+	h5{}
+	h6{}
+	p{}
+	
+	#wrapper_top {
+		h1{}
+		h2{}
+		h3{}
+		h4{}
+		h5{}
+		h6{}
+		p{}
+		
+		div.header_logo {
+			h1{}
+			h2{}
+			h3{}
+			h4{}
+			h5{}
+			h6{}
+			p{}
+			
+			figure {
+				p{}
+				
+				img {
+					
+				}
+			}
+		}
+	}
+}
+
+div#wrapper_mid {
+	h1{}
+	h2{}
+	h3{}
+	h4{}
+	h5{}
+	h6{}
+	p{}
+	
+	#wrapper_top1 {
+		h1{
+			font-family: @bungee;
+			font-size: 5rem;
+			margin-top: -1rem;
+			color: @color2;
+			text-align: center;
+		}
+		h2{}
+		h3{}
+		h4{}
+		h5{}
+		h6{}
+		p{}
+	}
+}
+
+div#wrapper_mid_low {
+	h1{}
+	h2{}
+	h3{}
+	h4{}
+	h5{}
+	h6{}
+	p{}
+	
+	#wrapper_top2 {
+		h1{}
+		h2{
+			font-family: @condensed;
+			font-variant-caps: small-caps;
+			font-size: 8rem;
+			text-align: center;
+			margin-top: -2rem;
+			text-shadow: 2px 2px 3px @color1;
+		}
+		h3{}
+		h4{}
+		h5{}
+		h6{}
+		p{
+			text-align: center;
+			font-weight: 600;
+			font-size: 2rem;
+			color: rgba(60,69,71,1);
+			margin-top: -8.75rem;
+			
+			i {
+				font-family: @condensed;
+				font-style: normal;
+				font-weight: 300;
+				font-variant-caps: small-caps;
+			}
+			
+			span {
+				font-size: 2rem;
+				font-weight: 400;
+				font-variant-caps: small-caps;
+			}
+		}
+	}
+}

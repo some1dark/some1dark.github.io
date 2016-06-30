@@ -1,12 +1,53 @@
-@import 'https://fonts.googleapis.com/css?family=Bungee|Open+Sans:400,400i';
+@import 'https://fonts.googleapis.com/css?family=Bungee|Open+Sans:400,400i|Open+Sans+Condensed:300';
+/*==================================*/
 /*	CSS by Stephen James Morris 	*/
-/*	22.06.2016 - 08:49:00			*/
-/*	Edit: 24/06/2046				*/
+/*	29.06.2016 - 08:49:00			*/
+/*	Edit: 29/06/2046				*/
+/*==================================*/
 .bungee {
   font-family: 'Bungee', cursive;
 }
 .opensans {
   font-family: 'Open Sans', sans-serif;
+}
+.opensanscondensed {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+div#wrapper_mid #wrapper_top1 h1 {
+  font-family: 'Bungee', cursive;
+  font-size: 5rem;
+  margin-top: -1rem;
+  color: #eeeeee;
+  text-align: center;
+}
+div#wrapper_mid_low #wrapper_top2 h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-variant-caps: small-caps;
+  font-size: 8rem;
+  text-align: center;
+  margin-top: -2rem;
+  text-shadow: 2px 2px 3px #3c4547;
+}
+div#wrapper_mid_low #wrapper_top2 p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #3c4547;
+  margin-top: -8.75rem;
+}
+div#wrapper_mid_low #wrapper_top2 p i {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-variant-caps: small-caps;
+}
+div#wrapper_mid_low #wrapper_top2 p span {
+  font-size: 2rem;
+  font-weight: 400;
+  font-variant-caps: small-caps;
 }
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -379,6 +420,7 @@ textarea {
 body {
   background-color: #000;
   font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
 }
 header {
   min-height: 288px;
@@ -414,10 +456,13 @@ div#wrapper_mid #wrapper_top1 {
   width: 980px;
   margin: 0 auto;
 }
-div#wrapper_mid #wrapper_top1 h1 {
-  font-family: 'Bungee', cursive;
-  font-size: 3rem;
-  margin-top: -1rem;
-  color: #eeeeee;
-  text-align: center;
+div#wrapper_mid_low {
+  background-color: #ffffff;
+  width: 100%;
+}
+div#wrapper_mid_low #wrapper_top2 {
+  min-height: 288px;
+  width: 980px;
+  margin: 0 auto;
+  padding-top: 1rem;
 }
