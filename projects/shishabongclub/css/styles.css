@@ -465,3 +465,13 @@ div#wrapper_mid_low #wrapper_top2 {
   margin: 0 auto;
   padding: 1rem;
 }
+div#wrapper_mid_low #wrapper_top3 {
+  width: 100%;
+  background-color: #242323;
+}
+div#wrapper_mid_low #wrapper_top3 #wrapper_top3_inside {
+  margin: 0 auto;
+  width: 980px;
+  text-align: center;
+  position: relative;
+}
