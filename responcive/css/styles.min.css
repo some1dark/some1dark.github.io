@@ -95,6 +95,7 @@ footer div.row ul li a:hover{color:#e8ede9}
 footer div.row ul li a i.fa{padding-right:1rem;margin-left:.5rem}
 figcaption{float:right;clear:both}
 mark{background-color:#d9d9db}
+.123{transform:s}
 @media screen and (max-width:680px){ul.topnav li:not(:first-child){display:none}
 ul.topnav li.icon{float:right;display:inline-block}
 [class*=col-]{float:none;padding:15px;width:100%}

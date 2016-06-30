@@ -1,0 +1,62 @@
+// LESS Layout
+
+body {
+	background-color: #000;
+	font-family: @opensans;
+}
+
+header {
+	min-height: 288px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: rgba(0, 0, 0, 1);
+	background-image: url(../img/bg-header.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+	
+	#wrapper_top {
+		width: 100%;
+		margin: 0 auto;
+		//position: absolute;
+		top: 0;
+		left: 0;
+		
+		div.header_logo {
+			margin: 0 auto;
+			text-align: center;
+			padding-top: 2rem;
+			
+			figure {
+				
+				img {
+					
+				}
+			}
+		}
+	}
+}
+
+div#wrapper_mid {
+	background-image: url(../img/lion_top.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-color: rgba(0, 0, 0, 1);
+	border-top: 1px solid @color1;
+	
+	#wrapper_top1 {
+		min-height: 288px;
+		width: 980px;
+		margin: 0 auto;
+		
+		h1 {
+			font-family: @bungee;
+			font-size: 3rem;
+			margin-top: -1rem;
+			color: @color2;
+			text-align: center;
+		}
+	}
+}
+
