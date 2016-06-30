@@ -28,7 +28,7 @@ div#wrapper_mid_low #wrapper_top2 h2 {
   font-variant-caps: small-caps;
   font-size: 8rem;
   text-align: center;
-  margin-top: -2rem;
+  margin-top: -1rem;
   text-shadow: 2px 2px 3px #3c4547;
 }
 div#wrapper_mid_low #wrapper_top2 p {
@@ -461,8 +461,7 @@ div#wrapper_mid_low {
   width: 100%;
 }
 div#wrapper_mid_low #wrapper_top2 {
-  min-height: 288px;
   width: 980px;
   margin: 0 auto;
-  padding-top: 1rem;
+  padding: 1rem;
 }
