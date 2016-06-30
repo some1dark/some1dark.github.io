@@ -19,9 +19,11 @@ body {
 div#wrapper_mid #wrapper_top1 h1 {
   font-family: 'Bungee', cursive;
   font-size: 5rem;
-  margin-top: -1rem;
+  margin-top: -11rem;
   color: #eeeeee;
   text-align: center;
+  vertical-align: baseline;
+  line-height: inherit;
 }
 div#wrapper_mid_low #wrapper_top2 h2 {
   font-family: 'Open Sans Condensed', sans-serif;
@@ -445,7 +447,7 @@ header #wrapper_top div.header_logo {
   padding-top: 2rem;
 }
 div#wrapper_mid {
-  width: 100%;
+  max-width: 100%;
   background-image: url(../img/lion_top.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -454,6 +456,7 @@ div#wrapper_mid {
   border-top: 1px solid #3c4547;
 }
 div#wrapper_mid #wrapper_top1 {
+  min-height: 288px;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -496,4 +499,21 @@ article div.main-top {
   max-width: 980px;
   margin: 0 auto;
   padding: 1rem;
+}
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+.stopfade {
+  opacity: .5;
 }
