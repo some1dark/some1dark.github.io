@@ -1,0 +1,15 @@
+@import url("normalizer.css");
+
+/* Float without Margin */
+nav {
+	width: 25%;
+	border: 1px solid #000;
+	float: right;
+}
+
+main {
+	width: 70%;
+	border: 1px solid #000;
+	margin-right: 30%;
+}
+

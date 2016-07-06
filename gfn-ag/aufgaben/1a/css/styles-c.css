@@ -1,0 +1,50 @@
+@import url("normalizer.css");
+
+* {}
+html {}
+
+body {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+/* Float without Margin */
+nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	flex-grow: 	1;
+	width: 25%;
+	border: 1px solid #000;
+	position: absolute;
+	top: 3%;
+	left: 10%;
+	padding-right: 2.5rem;
+}	
+	nav ul {
+		/*display: -webkit-flex;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;*/
+		list-style: none;
+	}	
+		nav ul li {
+			-webkit-flex-direction: column;
+			flex-direction: column;
+			border: 1px dotted #ccc;
+		}
+
+main {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+    flex-direction: row;
+	flex-wrap: wrap;
+	width: 50%;
+	border: 1px solid #000;
+	position: absolute;
+	top: 3%;
+	left: 40%;
+}
