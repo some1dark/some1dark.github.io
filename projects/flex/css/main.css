@@ -219,6 +219,14 @@ footer {
 	background-position: bottom center;
 	min-height: 25rem;
 }
+.dark-foot {
+	color: rgb(255, 255, 255);
+	background-color: rgba(0, 0, 0, 0.5);
+	margin-left: 4rem;
+	margin-right: 4rem;
+	font-family: 'voltaireregular';
+}
+
 
 /* ==========================================================================
    3D Box Shadow
@@ -237,11 +245,10 @@ footer {
 	left:35px;
 	top:80%;
 	width:30%;
-	/*background:#000;*/
 	z-index: -1;
-	-webkit-box-shadow: 0 20px 15px #000;
-	-moz-box-shadow: 0 20px 15px #000;
-	box-shadow: 0 20px 15px #000;
+	-webkit-box-shadow: 0 20px 15px rgba(0, 0, 0, 0.9);
+	-moz-box-shadow: 0 20px 15px rgba(0, 0, 0, 0.9);
+	box-shadow: 0 20px 15px rgba(0, 0, 0, 0.9);
 	-webkit-transform: rotate(-6deg);
 	-moz-transform: rotate(-6deg);
 	transform: rotate(-6deg);
@@ -252,6 +259,8 @@ footer {
 	transform: rotate(6deg);
 	right: 35px;left: auto;
 }
+
+
 
 /* ==========================================================================
    Media Queries
