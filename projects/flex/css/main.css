@@ -76,7 +76,11 @@ textarea {
 h1.welcome {
 	font-family: 'voltaireregular';
 	text-align: center;
+	font-size: 5rem;
+	letter-spacing: .5rem;
 	padding-bottom: .9rem;
+	text-shadow: 0 0 5px rgba(255,255,255,1), 0 0 10px rgba(255,255,255,1), 0 0 15px rgba(255,255,255,1), 0 0 20px rgba(255,45,149,1), 0 0 30px rgba(255,45,149,1), 0 0 40px rgba(255,45,149,1), 0 0 50px rgba(255,45,149,1), 0 0 75px rgba(255,45,149,1);
+	margin-top: -46rem;
 
 }
 
@@ -105,6 +109,7 @@ header {
 	background-color: rgb(0,0,0);
 	min-height: 15rem;
 	border-bottom: 1px solid rgb(60,69,69);
+	margin-top: -1rem;
 }
 
 .navbar {
@@ -116,7 +121,7 @@ header {
 
 nav {
 	margin: 0 auto;
-	max-width: 55%;	
+	max-width: 55%;
 }
 	nav ul {
 		list-style-type: none;
@@ -135,8 +140,10 @@ nav {
 				display: block;
 				padding: 1rem 1rem;
 				text-decoration: none;
-				color: rgb(69,69,69);
+				color: rgb(74,74,74);
+				font-family: 'voltaireregular';
 				font-weight: bold;
+				font-size: .99rem;
 			}
 			nav ul li a:hover {
 				color: rgb(0,0,0);
@@ -149,11 +156,14 @@ main {
 
 section#top {
 	background-image: url(../img/lion_top.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left bottom;
 	min-height: 18.4rem;
 }
 
 section#mid {
-	min-height: 25rem;
+	margin-top: -1rem;
 	background-color: rgb(255, 255, 255);
 	background-image: -moz-linear-gradient(180deg, rgb(255, 255, 255) 8%, rgb(36, 35, 35) 8%, rgb(0, 0, 0) 50%, rgb(36, 35, 35) 78%, rgb(255, 255, 255) 78%);
 	background-image: -webkit-linear-gradient(180deg, rgb(255, 255, 255) 8%, rgb(36, 35, 35) 8%, rgb(0, 0, 0) 50%, rgb(36, 35, 35) 78%, rgb(255, 255, 255) 78%);
@@ -180,14 +190,28 @@ section#mid {
 }
 
 section#mid-low {}
+.wrapper h2 {
+	text-align: center;
+	font-size: 2rem;
+}
 
-section#low {}
+
+section#low {
+	margin-top: 30rem;
+	padding: 1rem;
+}
 
 .wrapper {
 	margin: 0 auto;
 	max-width: 55%;
-	/*background-color: #fff;*/
-	/*min-height: 20rem;*/	
+}
+
+footer {
+	background: url(../img/lion.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom center;
+	min-height: 25rem;
 }
 
 
