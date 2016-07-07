@@ -79,8 +79,9 @@ h1.welcome {
 	font-size: 5rem;
 	letter-spacing: .5rem;
 	padding-bottom: .9rem;
-	text-shadow: 0 0 5px rgba(255,255,255,1), 0 0 10px rgba(255,255,255,1), 0 0 15px rgba(255,255,255,1), 0 0 20px rgba(255,45,149,1), 0 0 30px rgba(255,45,149,1), 0 0 40px rgba(255,45,149,1), 0 0 50px rgba(255,45,149,1), 0 0 75px rgba(255,45,149,1);
+	text-shadow: 0 0 5px rgba(129,190,235,1), 0 0 10px rgba(129,190,235,1), 0 0 15px rgba(129,190,235,1), 0 0 20px rgba(25,37,75,1), 0 0 30px rgba(25,37,75,1), 0 0 40px rgba(25,37,75,1), 0 0 50px rgba(25,37,75,1), 0 0 75px rgba(25,37,75,1);
 	margin-top: -40rem;
+	color: rgba(0,29,53,0.9);
 
 }
 
@@ -109,7 +110,7 @@ header {
 	background-color: rgb(0,0,0);
 	min-height: 15rem;
 	border-bottom: 1px solid rgb(60,69,69);
-	margin-top: -1rem;
+	margin-top: -1rem;	
 }
 
 .navbar {
@@ -165,11 +166,11 @@ section#top {
 section#mid {
 	margin-top: -1rem;
 	background-color: rgb(255, 255, 255);
-	background-image: -moz-linear-gradient(180deg, rgb(255, 255, 255) 12%, rgb(36, 35, 35) 12%, rgb(0, 0, 0) 50%, rgb(36, 35, 35) 78%, rgb(255, 255, 255) 78%);
-	background-image: -webkit-linear-gradient(180deg, rgb(255, 255, 255) 12%, rgb(36, 35, 35) 12%, rgb(0, 0, 0) 50%, rgb(36, 35, 35) 78%, rgb(255, 255, 255) 78%);
-	background-image: -ms-linear-gradient(180deg, rgb(255, 255, 255) 12%, rgb(36, 35, 35) 12%, rgb(0, 0, 0) 50%, rgb(36, 35, 35) 78%, rgb(255, 255, 255) 78%);
-	background-image: -o-linear-gradient(180deg, rgb(255, 255, 255) 12%, rgb(36, 35, 35) 12%, rgb(0, 0, 0) 50%, rgb(36, 35, 35) 78%, rgb(255, 255, 255) 78%);
-	background-image: linear-gradient(180deg, rgb(255, 255, 255) 12%, rgb(36, 35, 35) 12%, rgb(0, 0, 0) 50%, rgb(36, 35, 35) 78%, rgb(255, 255, 255) 78%);
+	background-image: -moz-linear-gradient(180deg, rgb(255, 255, 255) 15%, rgb(36, 35, 35) 15%, rgb(0, 0, 0) 50%, rgb(36, 35, 35) 90%, rgb(255, 255, 255) 90%);
+	background-image: -webkit-linear-gradient(180deg, rgb(255, 255, 255) 15%, rgb(36, 35, 35) 15%, rgb(0, 0, 0) 50%, rgb(36, 35, 35) 90%, rgb(255, 255, 255) 90%);
+	background-image: -ms-linear-gradient(180deg, rgb(255, 255, 255) 15%, rgb(36, 35, 35) 15%, rgb(0, 0, 0) 50%, rgb(36, 35, 35) 90%, rgb(255, 255, 255) 90%);
+	background-image: -o-linear-gradient(180deg, rgb(255, 255, 255) 15%, rgb(36, 35, 35) 15%, rgb(0, 0, 0) 50%, rgb(36, 35, 35) 90%, rgb(255, 255, 255) 90%);
+	background-image: linear-gradient(180deg, rgb(255, 255, 255) 15%, rgb(36, 35, 35) 15%, rgb(0, 0, 0) 50%, rgb(36, 35, 35) 90%, rgb(255, 255, 255) 90%);
 }
 .promo-img {
 	text-align: center;
@@ -203,7 +204,7 @@ section#mid-low {}
 
 
 section#low {
-	margin-top: 30rem;
+	margin-top: 25rem;
 	padding: 1rem;
 }
 
@@ -213,18 +214,81 @@ section#low {
 }
 
 footer {
-	background: url(../img/lion.png);
+	background: url(../img/lion-footer.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom center;
 	min-height: 25rem;
 }
 .dark-foot {
-	color: rgb(255, 255, 255);
-	background-color: rgba(0, 0, 0, 0.5);
+	color: rgb(44, 44, 44);
+	font-size: 1.5rem;
+	text-align: center;
 	margin-left: 4rem;
 	margin-right: 4rem;
+	padding-top: 25rem;
 	font-family: 'voltaireregular';
+	line-height: 1.25rem;
+}
+.dark-foot span {
+	font-size: 1rem;
+	
+}
+
+/* ==========================================================================
+   This is the element we are applying the animation to.
+   ========================================================================== */
+div.shadow1 {
+
+	animation-name: move;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0.5s;
+	animation-iteration-count: 1;
+	animation-direction: infinite;
+
+	-moz-animation-name: move;
+	-moz-animation-duration: 5s;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-delay: 0.5s;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-direction: infinite;
+
+	-webkit-animation-name: move;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-delay: 0.5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: infinite;
+
+}
+
+/* ==========================================================================
+   This is the animation code. 
+   ========================================================================== */
+@keyframes move {
+	0%	{	-webkit-transform: translate(0, 0) scale(0.0001) }
+	15%	{	-webkit-transform: translate(0, 0) }
+	35%	{	-webkit-transform: translate(10rem, 0)}
+	/*50%	{	-webkit-transform: translate(0, 0)}*/
+	75%	{	-webkit-transform: translate(-10rem, 0)}
+	/*100%	{	-webkit-transform: translate(0, 0)}*/
+}
+@-moz-keyframes move {
+	0%	{	-webkit-transform: translate(0, 0) scale(0.0001) }
+	15%	{	-webkit-transform: translate(0, 0) }
+	35%	{ 	-webkit-transform: translate(10rem, 0)}
+	/*50%	{	-webkit-transform: translate(0, 0)}*/
+	75%	{	-webkit-transform: translate(-10rem, 0)}
+	/*100%	{	-webkit-transform: translate(0, 0)}*/
+}
+@-webkit-keyframes move {
+	0%	{	-webkit-transform: translate(0, 0) scale(0.0001) }
+	15%	{	-webkit-transform: translate(0, 0) }
+	35% {	-webkit-transform: translate(10rem, 0) }
+	/*50% {	-webkit-transform: translate(0, 0)}*/
+	75% {	-webkit-transform: translate(-10rem, 0)}
+	/*100% {	-webkit-transform: translate(0, 0)}*/
 }
 
 
