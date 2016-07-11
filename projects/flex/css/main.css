@@ -1,5 +1,7 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
+@import 'https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i';
+
 html {
     color: #222;
     font-size: 1em;
@@ -60,8 +62,11 @@ textarea {
 
 
 /* ==========================================================================
-   Author's custom styles
+   Custom styles by some1dark.github.io
    ========================================================================== */
+
+
+
 @font-face {
     font-family: 'voltaireregular';
     src: url('../fonts/voltaire/voltaire-regular-webfont.eot');
@@ -79,21 +84,8 @@ h1.welcome {
 	font-size: 5rem;
 	letter-spacing: .5rem;
 	padding-bottom: .9rem;
-	/*text-shadow: 	0 0 5px rgba(129,190,235,1), 
-					0 0 10px rgba(129,190,235,1), 
-					0 0 15px rgba(129,190,235,1), 
-					0 0 20px rgba(25,37,75,1), 
-					0 0 30px rgba(25,37,75,1), 
-					0 0 40px rgba(25,37,75,1), 
-					0 0 50px rgba(25,37,75,1), 
-					0 0 75px rgba(25,37,75,1);*/
 	margin-top: -40rem;
-	color: rgba(0,29,53,0.9);
-	
-	
-    -webkit-animation: glow 5s infinite;
-	-moz-animation: glow 5s infinite;
-	animation: glow 5s infinite;
+	color: rgba(54,54,54,1);
 }
 
 img {
@@ -110,7 +102,7 @@ body {
 	background: linear-gradient(0deg, rgb(0, 0, 0) 30%, rgb(36, 35, 35) 70%);
 	background-size: contain;
 	background-repeat: no-repeat;
-	min-height: 80rem;
+	min-height: 80rem;	
 }
 
 header {
@@ -134,6 +126,7 @@ header {
 nav {
 	margin: 0 auto;
 	max-width: 55%;
+	padding-top: 2rem;
 }
 	nav ul {
 		list-style-type: none;
@@ -162,15 +155,45 @@ nav {
 				background-color: rgb(36,35,35);
 			}
 
+ /* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0,0,0);
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: rgb(74,74,74);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #000; color: rgb(129,191,236);}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
 main {
 	background-color: rgb(255,255,255);
 }
 
 section#top {
-	background-image: url(../img/lion_top.png);
+	background-color: rgb(0,0,0);
+	background-image: url(../img/lion-footer-left.jpg), url(../img/lion-footer-right.jpg);
 	background-repeat: no-repeat;
 	background-size: contain;
-	background-position: left bottom;
+	background-position: left bottom, right bottom;
 	min-height: 18.4rem;
 }
 
@@ -183,20 +206,29 @@ section#mid {
 	background-image: -o-linear-gradient(180deg, rgb(255, 255, 255) 15%, rgb(36, 35, 35) 15%, rgb(0, 0, 0) 50%, rgb(36, 35, 35) 90%, rgb(255, 255, 255) 90%);
 	background-image: linear-gradient(180deg, rgb(255, 255, 255) 15%, rgb(36, 35, 35) 15%, rgb(0, 0, 0) 50%, rgb(36, 35, 35) 90%, rgb(255, 255, 255) 90%);
 }
+
+figcaption.slider {
+	font-size: 0.7rem;
+	font-family: 'voltaireregular';
+	color: rgb(69,69,69);
+	padding-top: 0.25rem;
+}
+
 .promo-img {
 	text-align: center;
 	padding-top: 1rem;
 	/*width: 100%;*/
 	height: auto;
 }
+
 .promo-img .border {
 	border: 5px solid #000;
 	border-radius: 8px;
 	background-color: #000;
-	
-	
 }
-.img-shadow {
+
+/* This is the old Shadow version that still relies on an Image insted of CSS3 magic */
+/*.img-shadow {
 	background: url(../img/liftedshadow_medium.png);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -205,17 +237,35 @@ section#mid {
 	width: 100%;
 	height: auto;
 	float: left;
-}
+}*/
 
 section#mid-low {}
+
+.wrapper p.indent {
+	font-family: 'Cuprum', sans-serif;
+	line-height: 1.2rem;
+	width: 50%;
+	float: left;
+}
+.wrapper p.indent::First-Letter {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
 .wrapper h2 {
 	text-align: center;
 	font-size: 2rem;
+	font-family: 'Cuprum', sans-serif;
+}
+
+/* This Text is behind the slider */
+.back {
+	text-align: center;
 }
 
 
 section#low {
-	margin-top: 25rem;
+	margin-top: 20rem;
 	padding: 1rem;
 }
 
@@ -225,11 +275,11 @@ section#low {
 }
 
 footer {
-	background: url(../img/lion-footer.jpg);
+	background-color: rgb(0,0,0);
+	background: url(../img/lion-footer-left-2.jpg), url(../img/lion-footer-right-2.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: bottom center;
-	min-height: 25rem;
+	background-size: 25%, 25%;
+	background-position: left bottom, right bottom;
 }
 .dark-foot {
 	color: rgb(44, 44, 44);
@@ -243,32 +293,69 @@ footer {
 }
 .dark-foot span {
 	font-size: 1rem;
+	line-height: 1.15rem;
 	
+}
+
+/* ==========================================================================
+   CSS Slider
+   ========================================================================== */
+@keyframes slidy {
+	0%	{ left: 0%; }
+	20% { left: 0%; }
+	25% { left: -100%; }
+	45% { left: -100%; }
+	50% { left: -200%; }
+	70% { left: -200%; }
+	75% { left: -300%; }
+	95% { left: -300%; }
+	100%{ left: -400%; }
+}
+
+div#slider { 
+	overflow: hidden; 
+	max-width: 45%;
+	max-height: 45%;
+}
+div#slider figure img { 
+	width: 20%; 
+	float: right;
+}
+div#slider figure { 
+	position: relative;
+
+	width: 500%;
+	margin: 0;
+	left: 0;
+	text-align: left;
+	font-size: 0;
+	animation: 30s slidy infinite; 
 }
 
 /* ==========================================================================
    This is the element we are applying the animation to.
    ========================================================================== */
+
 div.shadow1 {
 
 	animation-name: move;
-	animation-duration: 5s;
+	animation-duration: 1s;
 	animation-timing-function: ease-in-out;
-	animation-delay: 1.5s;
+	animation-delay: .5s;
 	animation-iteration-count: 1;
 	animation-direction: infinite;
 
 	-moz-animation-name: move;
-	-moz-animation-duration: 5s;
+	-moz-animation-duration: 1s;
 	-moz-animation-timing-function: ease-in-out;
-	-moz-animation-delay: 1.5s;
+	-moz-animation-delay: .5s;
 	-moz-animation-iteration-count: 1;
 	-moz-animation-direction: infinite;
 
 	-webkit-animation-name: move;
-	-webkit-animation-duration: 5s;
+	-webkit-animation-duration: 1s;
 	-webkit-animation-timing-function: ease-in-out;
-	-webkit-animation-delay: 1.5s;
+	-webkit-animation-delay: .5s;
 	-webkit-animation-iteration-count: 1;
 	-webkit-animation-direction: infinite;
 
@@ -277,90 +364,45 @@ div.shadow1 {
 /* ==========================================================================
    This is the animation code. 
    ========================================================================== */
+
 @keyframes move {
-	0%	{	transform: translate(0, 0) scale(0.0001) }
+	0%	{	transform: translate(0, 0) }
 	15%	{	transform: translate(0, 0) }
-	35%	{	transform: translate(10rem, 0)}
-	/*50%	{	transform: translate(0, 0)}*/
-	75%	{	transform: translate(-10rem, 0)}
-	/*100%	{	transform: translate(0, 0)}*/
+	35% {	transform: translate(4rem, 0)}
+	50% {	transform: translate(-4rem, 0)}
+	65% {	transform: translate(4rem, 0)}
+	80% {	transform: translate(-4rem, 0)}
+	90% {	transform: translate(0, 0)}
+	100%{	transform: translate(0, 0)}
 }	@-moz-keyframes move {
-	0%	{	-moz-transform: translate(0, 0) scale(0.0001) }
+	0%	{	-moz-transform: translate(0, 0) }
 	15%	{	-moz-transform: translate(0, 0) }
-	35%	{ 	-moz-transform: translate(10rem, 0)}
-	/*50%	{	-moz-transform: translate(0, 0)}*/
-	75%	{	-moz-transform: translate(-10rem, 0)}
-	/*100%	{	-moz-transform: translate(0, 0)}*/
+	35% { 	-moz-transform: translate(4rem, 0)}
+	50% {	-moz-transform: translate(-4rem, 0)}
+	65% { 	-moz-transform: translate(4rem, 0)}
+	80% {	-moz-transform: translate(-4rem, 0)}
+	90% {	-moz-transform: translate(0, 0)}
+	100%{	-moz-transform: translate(0, 0)}
 }	@-webkit-keyframes move {
-	0%	{	-webkit-transform: translate(0, 0) scale(0.0001) }
+	0%	{	-webkit-transform: translate(0, 0) }
 	15%	{	-webkit-transform: translate(0, 0) }
-	35% {	-webkit-transform: translate(10rem, 0) }
-	/*50% {	-webkit-transform: translate(0, 0)}*/
-	75% {	-webkit-transform: translate(-10rem, 0)}
-	/*100% {	-webkit-transform: translate(0, 0)}*/
+	35% {	-webkit-transform: translate(4rem, 0) }
+	50% {	-webkit-transform: translate(-4rem, 0)}
+	65% {	-webkit-transform: translate(4rem, 0) }
+	80% {	-webkit-transform: translate(-4rem, 0)}
+	90% {	-webkit-transform: translate(0, 0)}
+	100%{	-webkit-transform: translate(0, 0)}
 }
-
-@-webkit-keyframes glow {
-        0% { 
-            text-shadow: 	0 0 5px rgba(129,190,235,1), 
-							0 0 10px rgba(129,190,235,1), 
-							0 0 15px rgba(129,190,235,1), 
-							0 0 20px rgba(25,37,75,1), 
-							0 0 30px rgba(25,37,75,1), 
-							0 0 40px rgba(25,37,75,1), 
-							0 0 50px rgba(25,37,75,1), 
-							0 0 75px rgba(25,37,75,1);
-        }
-		25% { 
-            text-shadow: 	0 0 5px rgba(129,190,235,0.5), 
-							0 0 10px rgba(129,190,235,0.5), 
-							0 0 15px rgba(129,190,235,0.5), 
-							0 0 20px rgba(25,37,75,0.5), 
-							0 0 30px rgba(25,37,75,0.5), 
-							0 0 40px rgba(25,37,75,0.5), 
-							0 0 50px rgba(25,37,75,0.5), 
-							0 0 75px rgba(25,37,75,0.5);
-		}
-		50% { 
-				text-shadow: 	0 0 5px rgba(129,190,235,1), 
-								0 0 10px rgba(129,190,235,1), 
-								0 0 15px rgba(129,190,235,1), 
-								0 0 20px rgba(25,37,75,1), 
-								0 0 30px rgba(25,37,75,1), 
-								0 0 40px rgba(25,37,75,1), 
-								0 0 50px rgba(25,37,75,1), 
-								0 0 75px rgba(25,37,75,1);
-			}
-		75% { 
-            text-shadow: 	0 0 5px rgba(129,190,235,0.5), 
-							0 0 10px rgba(129,190,235,0.5), 
-							0 0 15px rgba(129,190,235,0.5), 
-							0 0 20px rgba(25,37,75,0.5), 
-							0 0 30px rgba(25,37,75,0.5), 
-							0 0 40px rgba(25,37,75,0.5), 
-							0 0 50px rgba(25,37,75,0.5), 
-							0 0 75px rgba(25,37,75,0.5);
-		}
-		100% { 
-				text-shadow: 	0 0 5px rgba(129,190,235,1), 
-								0 0 10px rgba(129,190,235,1), 
-								0 0 15px rgba(129,190,235,1), 
-								0 0 20px rgba(25,37,75,1), 
-								0 0 30px rgba(25,37,75,1), 
-								0 0 40px rgba(25,37,75,1), 
-								0 0 50px rgba(25,37,75,1), 
-								0 0 75px rgba(25,37,75,1);
-			}
-    }
-
 
 /* ==========================================================================
    3D Box Shadow
    ========================================================================== */
+
 .shadow1 {
 	position: relative;
 	z-index: 1;
 }
+
 /* ==========================================================================
    Styling Shadows
    ========================================================================== */
@@ -369,7 +411,7 @@ div.shadow1 {
 	content:"";
 	bottom:15px;
 	left:35px;
-	top:80%;
+	top:79.9%;
 	width:30%;
 	z-index: -1;
 	-webkit-box-shadow: 0 20px 15px rgba(0, 0, 0, 0.9);
@@ -385,8 +427,6 @@ div.shadow1 {
 	transform: rotate(6deg);
 	right: 35px;left: auto;
 }
-
-
 
 /* ==========================================================================
    Media Queries

@@ -1,0 +1,253 @@
+/*
+ * My Custom Styles
+ * --------------------------------------------------
+ */
+@font-face {
+    font-family: 'voltaireregular';
+    src: url('../fonts/voltaire/voltaire-regular-webfont.eot');
+    src: url('../fonts/voltaire/voltaire-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/voltaire/voltaire-regular-webfont.woff2') format('woff2'),
+         url('../fonts/voltaire/voltaire-regular-webfont.woff') format('woff'),
+         url('../fonts/voltaire/voltaire-regular-webfont.svg#voltaireregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+	font-family: 'voltaireregular';
+	text-align: center;
+	font-size: 5rem;
+	letter-spacing: .5rem;
+	padding-bottom: .9rem;
+	/*margin-top: -40rem;*/
+	color: rgba(54,54,54,1);
+}
+
+img {
+	max-width: 100%;
+    height: auto;
+}
+
+body {
+	background: rgb(0, 0, 0);
+	background: -moz-linear-gradient(270deg, rgb(0, 0, 0) 30%, rgb(36, 35, 35) 70%);
+	background: -webkit-linear-gradient(270deg, rgb(0, 0, 0) 30%, rgb(36, 35, 35) 70%);
+	background: -o-linear-gradient(270deg, rgb(0, 0, 0) 30%, rgb(36, 35, 35) 70%);
+	background: -ms-linear-gradient(270deg, rgb(0, 0, 0) 30%, rgb(36, 35, 35) 70%);
+	background: linear-gradient(0deg, rgb(0, 0, 0) 30%, rgb(36, 35, 35) 70%);
+	background-size: contain;
+	background-repeat: no-repeat;
+	min-height: 80rem;
+}
+.left-head {
+	background-image: url(../img/lion-footer-left.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+section#mid {
+	
+	margin-top: -1.9rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	background-color: rgb(255, 255, 255);
+	background-image: -moz-linear-gradient(180deg, rgb(255, 255, 255) 15%, rgb(36, 35, 35) 15%, rgb(0, 0, 0) 50%, rgb(36, 35, 35) 85%, rgb(255, 255, 255) 85%);
+	background-image: -webkit-linear-gradient(180deg, rgb(255, 255, 255) 15%, rgb(36, 35, 35) 15%, rgb(0, 0, 0) 50%, rgb(36, 35, 35) 85%, rgb(255, 255, 255) 85%);
+	background-image: -ms-linear-gradient(180deg, rgb(255, 255, 255) 15%, rgb(36, 35, 35) 15%, rgb(0, 0, 0) 50%, rgb(36, 35, 35) 85%, rgb(255, 255, 255) 85%);
+	background-image: -o-linear-gradient(180deg, rgb(255, 255, 255) 15%, rgb(36, 35, 35) 15%, rgb(0, 0, 0) 50%, rgb(36, 35, 35) 85%, rgb(255, 255, 255) 85%);
+	background-image: linear-gradient(180deg, rgb(255, 255, 255) 15%, rgb(36, 35, 35) 15%, rgb(0, 0, 0) 50%, rgb(36, 35, 35) 85%, rgb(255, 255, 255) 85%);
+	
+}
+
+figcaption.slider {
+	font-size: 0.7rem;
+	font-family: 'voltaireregular';
+	color: rgb(69,69,69);
+	padding-top: 0.25rem;
+}
+
+.promo-img {
+	text-align: center;
+	padding-top: 1rem;
+	width: 100%;
+	height: auto;
+}
+
+.promo-img .border {
+	border: 5px solid #000;
+	border-radius: 8px;
+	background-color: #000;
+	margin: 0 auto;
+}
+
+.promo-img .border {
+	display: inline-block;
+}
+
+.dark-footer {
+	background-color: rgb(0,0,0);
+	background: url(../img/lion-footer-left-2.jpg), url(../img/lion-footer-right-2.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-size: 13%, 13%;
+	background-position: left bottom, right bottom;
+}
+.dark-foot {
+	color: rgb(44, 44, 44);
+	font-size: 2.5rem;
+	text-align: center;
+	margin-left: 4rem;
+	margin-right: 4rem;
+	padding-top: 8.8rem;
+	font-family: 'voltaireregular';
+	line-height: 1.95rem;
+}
+.dark-foot span {
+	font-size: 1.75rem;
+	line-height: 1.15rem;
+}
+
+.ft-logo {
+	padding-top: 5rem;
+	margin-bottom: -8rem;
+	position: relative;
+}
+
+hr.style-o { 
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #000, rgb(44,44,44), #000);
+  background-image: -moz-linear-gradient(left, #000, rgb(44,44,44), #000);
+  background-image: -ms-linear-gradient(left, #000, rgb(44,44,44), #000);
+  background-image: -o-linear-gradient(left, #000, rgb(44,44,44), #000);
+  background-image: linear-gradient(left, #000, rgb(44,44,44), #000);
+}
+
+.head-logo {
+	margin-top: -13px;
+}
+
+/* ==========================================================================
+   This is the element we are applying the animation to.
+   ========================================================================== */
+
+div.shadow1 {
+
+	animation-name: move;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-delay: .5s;
+	animation-iteration-count: 1;
+	animation-direction: infinite;
+
+	-moz-animation-name: move;
+	-moz-animation-duration: 1s;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-delay: .5s;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-direction: infinite;
+
+	-webkit-animation-name: move;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-delay: .5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: infinite;
+
+}
+
+/* ==========================================================================
+   3D Box Shadow
+   ========================================================================== */
+
+.shadow1 {
+	position: relative;
+	z-index: 1;
+}
+
+/* ==========================================================================
+   Styling Shadows
+   ========================================================================== */
+.shadow1:before, .shadow1:after{
+	position:absolute;
+	content:"";
+	bottom:7.79%;
+	left:26.5%;
+	top:10%;
+	width:30%;
+	z-index: -1;
+	-webkit-box-shadow: 0 20px 15px rgba(0, 0, 0, 0.9);
+	-moz-box-shadow: 0 20px 15px rgba(0, 0, 0, 0.9);
+	box-shadow: 0 20px 15px rgba(0, 0, 0, 0.9);
+	-webkit-transform: rotate(-6deg);
+	-moz-transform: rotate(-6deg);
+	transform: rotate(-6deg);
+}
+.shadow1:after{
+	-webkit-transform: rotate(6deg);
+	-moz-transform: rotate(6deg);
+	transform: rotate(6deg);
+	right: 26.5%;left: auto;
+}
+
+
+
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+body {
+  padding-top: 70px;
+}
+footer {
+  padding: 30px 0;
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
