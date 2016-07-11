@@ -126,6 +126,10 @@ hr.style-o {
 .head-logo {
 	margin-top: -13px;
 }
+.maps-100 {
+	text-align: center;
+	margin: 0 auto;
+}
 
 /* ==========================================================================
    This is the element we are applying the animation to.
