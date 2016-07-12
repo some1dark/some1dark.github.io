@@ -57,6 +57,7 @@ img {
 	-ms-transform: rotate(0) scale(0.95);
 	-o-transform: rotate(0) scale(0.95);
 	transform: rotate(0) scale(0.95);
+	
 	-webkit-transition: .3s ease-in-out;
 	-moz-transition: .3s ease-in-out;
 	-ms-transition: .3s ease-in-out;
@@ -69,6 +70,12 @@ img {
 	-ms-transform: rotate(0) scale(1);
 	-o-transform: rotate(0) scale(1);
 	transform: rotate(0) scale(1);
+	
+	-webkit-filter: blur(0);
+	-moz-filter: blur(0);
+	-ms-filter: blur(0);
+	-o-filter: blur(0);
+	filter: blur(0);
 }
 .hover-rotate-1 {
 	-webkit-transform: rotate(0) scale(0.95);
