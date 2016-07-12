@@ -2,6 +2,9 @@
  * My Custom Styles
  * --------------------------------------------------
  */
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,400i,500'; /*	font-family: 'Roboto', sans-serif;*/
+@import 'https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700'; /*	font-family: 'Yanone Kaffeesatz', sans-serif;*/
+
 @font-face {
     font-family: 'voltaireregular';
     src: url('../fonts/voltaire/voltaire-regular-webfont.eot');
@@ -23,6 +26,26 @@ h1 {
 	color: rgba(54,54,54,1);
 }
 
+a.intro {
+	text-align: center;
+	text-decoration: none;
+	font-family: 'voltaireregular';
+	
+}
+p.intro {
+	padding-top: 18px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	margin-right: -5px;
+	min-height: 220px;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	text-align: justify;
+}
+
 img {
 	max-width: 100%;
     height: auto;
@@ -37,7 +60,8 @@ body {
 	background: linear-gradient(0deg, rgb(0, 0, 0) 30%, rgb(36, 35, 35) 70%);
 	background-size: contain;
 	background-repeat: no-repeat;
-	min-height: 80rem;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 1.75rem;
 }
 .left-head {
 	background-image: url(../img/lion-footer-left.jpg);
@@ -116,11 +140,11 @@ figcaption.slider {
 hr.style-o { 
   border: 0; 
   height: 1px; 
-  background-image: -webkit-linear-gradient(left, #000, rgb(44,44,44), #000);
-  background-image: -moz-linear-gradient(left, #000, rgb(44,44,44), #000);
-  background-image: -ms-linear-gradient(left, #000, rgb(44,44,44), #000);
-  background-image: -o-linear-gradient(left, #000, rgb(44,44,44), #000);
-  background-image: linear-gradient(left, #000, rgb(44,44,44), #000);
+  background-image: -webkit-linear-gradient(left, #000, rgb(202,158,103), #000);
+  background-image: -moz-linear-gradient(left, #000, rgb(202,158,103), #000);
+  background-image: -ms-linear-gradient(left, #000, rgb(202,158,103), #000);
+  background-image: -o-linear-gradient(left, #000, rgb(202,158,103), #000);
+  background-image: linear-gradient(left, #000, rgb(202,158,103), #000);
 }
 
 .head-logo {
@@ -129,6 +153,9 @@ hr.style-o {
 .maps-100 {
 	text-align: center;
 	margin: 0 auto;
+}
+.centered {
+	text-align: center;
 }
 
 /* ==========================================================================
