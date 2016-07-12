@@ -241,6 +241,15 @@ hr.style-1 {
 	padding-bottom: 1rem;
 }
 
+.top-lions {
+	background: url(../img/lion-footer-left.png) no-repeat bottom left, url(../img/lion-footer-right.png) no-repeat bottom right;
+	min-height: 250px;
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+	margin-top: -60px;
+}
+
 /* ==========================================================================
    This is the element we are applying the animation to.
    ========================================================================== */
