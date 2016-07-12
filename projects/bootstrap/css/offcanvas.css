@@ -20,10 +20,14 @@ h1 {
 	font-family: 'voltaireregular';
 	text-align: center;
 	font-size: 5rem;
+	line-height: 3.5rem;
 	letter-spacing: .5rem;
-	padding-bottom: .9rem;
+	/*padding-bottom: .9rem;
 	/*margin-top: -40rem;*/
 	color: rgba(54,54,54,1);
+}
+.slogan {
+	font-size: 2rem;
 }
 
 a.intro {
@@ -97,6 +101,19 @@ img {
 	-o-transform: rotate(9deg) scale(1.1);
 	transform: rotate(9deg) scale(1.1);
 	opacity: 1;
+}
+
+.blur {
+	filter: blur(0);
+	
+	-webkit-transition: .3s ease-in-out;
+	-moz-transition: .3s ease-in-out;
+	-ms-transition: .3s ease-in-out;
+	-o-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.blur:hover {
+	filter: blur(px)
 }
 /***********/
 
@@ -194,17 +211,34 @@ hr.style-o {
   background-image: -ms-linear-gradient(left, #000, rgb(202,158,103), #000);
   background-image: -o-linear-gradient(left, #000, rgb(202,158,103), #000);
   background-image: linear-gradient(left, #000, rgb(202,158,103), #000);
+	margin-bottom: -0.5rem;
+}
+hr.style-1 { 
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #fff, rgb(202,158,103), #fff);
+  background-image: -moz-linear-gradient(left, #fff, rgb(202,158,103), #fff);
+  background-image: -ms-linear-gradient(left, #fff, rgb(202,158,103), #fff);
+  background-image: -o-linear-gradient(left, #fff, rgb(202,158,103), #fff);
+  background-image: linear-gradient(left, #fff, rgb(202,158,103), #fff);
+	margin-bottom: -0.5rem;
 }
 
 .head-logo {
 	margin-top: -13px;
 }
-.maps-100 {
-	text-align: center;
-	margin: 0 auto;
-}
+
 .centered {
 	text-align: center;
+}
+.google-maps iframe {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	min-height: 350px;
+	height: 100% !important;
+	padding-bottom: 1rem;
 }
 
 /* ==========================================================================
