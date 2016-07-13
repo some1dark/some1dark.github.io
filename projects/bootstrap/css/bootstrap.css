@@ -3561,13 +3561,12 @@ tbody.collapse.in {
   min-width: 160px;
   padding: 5px 0;
   margin: 2px 0 0;
-  font-size: 14px;
+  font-size: 1.45rem;
   text-align: left;
   list-style: none;
   background-color: #fff;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
-  border: 1px solid #ccc;
   border: 1px solid rgba(33,87,121,0.15);
   border-radius: 4px;
   -webkit-box-shadow: 0 6px 12px rgba(33,87,121,0.175);
@@ -3641,7 +3640,7 @@ tbody.collapse.in {
 .dropdown-header {
   display: block;
   padding: 3px 20px;
-  font-size: 12px;
+  font-size: 1.5rem;
   line-height: 1.42857143;
   color: rgba(33,87,121,.3);
   white-space: nowrap;
