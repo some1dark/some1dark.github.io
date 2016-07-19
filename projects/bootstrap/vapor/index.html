@@ -40,7 +40,7 @@
 
   <body>
 <!-- POPUP START -->
-  <div class="modal fade" id="overlay">
+  <div class="modal fade" id="overlay" data-keyboard="false" data-backdrop="static">
    	<div class="modal-dialog">
      	<div class="modal-content">
        		<div class="modal-header">
@@ -420,11 +420,12 @@
 			"dismiss":"Okay!",
 			"learnMore":"Mehr hierzu",
 			"link":"some1dark.github.io/cookies",
-			"theme":"light-floating"
+			"theme":"light-floating",
+			"expiryDays":"1"
 		};
 	</script>
 
-	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+	<script type="text/javascript" src="js/cookie.js"></script>
 	<!-- End Cookie Consent plugin -->
   </body>
 </html>

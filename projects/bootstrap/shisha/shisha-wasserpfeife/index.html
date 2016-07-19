@@ -34,16 +34,18 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.min.js'></script>
   </head>
 
 
   <body>   
      <!-- POPUP START -->
-  <div class="modal fade" id="overlay">
+  <div class="modal fade" id="overlay" data-keyboard="false" data-backdrop="static">
    	<div class="modal-dialog">
      	<div class="modal-content">
        		<div class="modal-header">
-       			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+       			<!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>-->
 				<h1 class="modal-title">Zutritt erst ab 18 Jahren</h1>
       		</div>
       		
@@ -362,11 +364,11 @@
 			"learnMore":"Mehr hierzu",
 			"link":"some1dark.github.io/cookies",
 			"theme":"light-floating",
-			"expiryDays":"5",
+			"expiryDays":"1"
 		};
 	</script>
 
-	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+	<script type="text/javascript" src="js/cookie.js"></script>
 	<!-- End Cookie Consent plugin -->
   </body>
 </html>
