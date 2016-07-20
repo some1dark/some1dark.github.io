@@ -6,5 +6,5 @@ body {
 canvas, img {
   width: 30%;
   position: absolute;
-  top: 0;
+  top: 250px;
 }
