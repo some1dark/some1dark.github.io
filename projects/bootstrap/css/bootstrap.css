@@ -3590,8 +3590,8 @@ tbody.collapse.in {
   line-height: 1.42857143;
   color: #333;
   white-space: nowrap;
-	border-bottom: 1px solid #fff;
-	border-top: 1px solid #fff;
+	border-bottom: 1px solid transparent;
+	border-top: 1px solid transparent;
 	
 }
 .dropdown-menu > li > a:hover,
@@ -5321,7 +5321,7 @@ a.list-group-item:focus,
 button.list-group-item:focus {
   color: #555;
   text-decoration: none;
-  background-color: #f5f5f5;
+  background-color: rgba(202,158,103,0.2);
 }
 button.list-group-item {
   width: 100%;

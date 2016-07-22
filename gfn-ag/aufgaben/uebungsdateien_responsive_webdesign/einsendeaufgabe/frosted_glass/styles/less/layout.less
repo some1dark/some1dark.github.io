@@ -1,0 +1,98 @@
+header {
+    color: #fff;
+    height: 35rem;
+    position: relative;
+    background: url(../images/bg.jpg) no-repeat right bottom;
+    .background-size(cover);
+    
+    #title {
+        color: inherit;
+        font-size: 7.5rem;
+        font-weight: bold;
+        letter-spacing: -0.05em;
+        white-space: nowrap;
+        text-decoration: none;
+        
+        position: absolute;
+        top: .5rem;
+        left: .5rem;
+        
+        display: block;
+        padding: 1rem 0;
+        opacity: .75;
+    }
+    
+    nav {
+        padding: 0;
+        
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        
+        border-top: 1px solid rgba(255, 255, 255, 0.6);
+        
+        &:after {
+            content: "";
+            display: block;
+            
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+            
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        ul {
+            padding: 0;
+            list-style-type: none;
+            
+            width: 100%;
+            display: table;
+            
+            li {
+                display: table-cell;
+                text-align: center;
+                
+                a {
+                    color: inherit;
+                    font-size: 1.4rem;
+                    font-weight: bold;
+                    text-decoration: none;
+                    white-space: nowrap;
+                    display: block;
+                    padding: 4.5rem 1rem;
+                }
+            }
+        }
+    }
+}
+
+main {
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    
+    h1, p {
+        margin-bottom: 1rem;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    p {
+        line-height: 1.5em;
+        text-align: justify;
+        .hyphens();
+    }
+    
+    :last-child {
+        margin-bottom: 0;
+    }
+}

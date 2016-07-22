@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">	
+  <title>Flexbox - Kontaktformular</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<style>
+  html { box-sizing: border-box; }
+  *, *::before, *::after { box-sizing: inherit; }
+  body { font: 1rem/1.5 sans-serif; min-width: 320px; padding: 1rem; margin: auto;}
+  h1 { font-size: 1.25rem; margin-bottom: 1.5rem;}
+
+  /* Basisformatierung */ 
+  form { max-width: 500px; }
+  form > div { margin-bottom: 1em; }
+  input,
+  textarea, 
+  button {
+    font: 1.1rem/normal sans-serif;  
+    text-align: left; 
+    background: #E9E9E9;
+    padding: 0.25rem 0.75rem;
+    border: none;
+    margin: 0; 
+  }
+  button {
+    text-align: center; 
+    background: black;
+    color: white;
+    cursor: pointer;	
+  }
+  button:hover, 
+  button:focus {
+    background-color: darkorange;
+    color: white; 
+  }
+
+  /* Hier das CSS aus dem Training einfügen */ 
+
+
+</style>
+
+</head>
+
+<body>
+<h1>Flexbox - Kontaktformular</h1>
+
+<form action="">
+  <div>
+    <label for="besuchername">Ihr Name: </label>
+    <input type="text" id="besuchername" name="besuchername" required> 
+  </div>  
+
+  <div>
+    <label for="besuchermail">Ihre E-Mail: </label>
+    <input type="email" id="besuchermail" name="besuchermail" required> 
+  </div>  
+
+  <div>
+    <label for="nachricht">Ihre Nachricht: </label>
+    <textarea id="nachricht" name="nachricht" cols="20" rows="5" required></textarea>
+  </div>  
+
+  <div>
+    <button type="submit">Abschicken</button>
+  </div>  
+</form>  
+
+</body>
+</html>

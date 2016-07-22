@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">	
+  <title>Flexbox - Suchformular</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style>
+      html { box-sizing: border-box; }
+      *, *::before, *::after { box-sizing: inherit; }
+      body { font: 1rem/1.5 sans-serif; min-width: 320px; padding: 1rem; }
+      h1 { font-size: 1.5rem; margin-bottom: 1.5rem;}
+
+      /* Basisformatierung */ 
+      form { 
+        max-width: 500px; 
+      }
+      input, 
+      button {
+        font: 1.1rem/normal sans-serif;  
+        text-align: left; 
+        padding: 0.25rem 0.75rem;
+        border: none;
+        margin: 0; 
+      }
+      input {
+        background: #E9E9E9;
+        -webkit-appearance: textfield; /* für das Styling in Safari */ 
+      }
+      button {
+        background-color: black;
+        color: white;
+        cursor: pointer;	
+      }
+      button:hover, 
+      button:focus {
+        background-color: darkorange;
+        color: white; 
+      }
+     
+      /* Am besten schrittweise die Kommentare entfernen  */
+      form {
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+      }
+      input {
+        /* flex: 1; */ 
+      }
+
+  </style>
+
+</head>
+
+<body>
+<h1>Flexbox - Suchformular</h1>
+
+<form action="">
+  <input type="search" name="suche" size="20" maxlength="100">
+  <button type="submit">Suchen</button>
+</form>
+
+</body>
+</html>

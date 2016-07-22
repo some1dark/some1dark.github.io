@@ -1,0 +1,51 @@
+/* ====================================================
+
+  Stylesheet für die Bildergalerie
+  Datei: galerie-prefixed.css
+
+==================================================== */
+
+.galerie {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: wrap;
+      -ms-flex-flow: wrap;
+          flex-flow: wrap;
+}
+
+.galerie article {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 300px;
+      -ms-flex: 1 300px;
+          flex: 1 300px;
+}
+
+.galerie figure {
+  max-width: 280px; 
+  margin-top: 16px; 
+  margin-top: 1rem; 
+  margin-right: 16px; 
+  margin-right: 1rem;  
+}
+
+.galerie img {
+  max-width: 100%; 
+  border-radius: 0.25rem; 
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.3); 
+}
+
+.galerie .text {
+  max-width: 280px; 
+  margin-top: 16px; 
+  margin-top: 1rem; 
+  margin-bottom: 32px; 
+  margin-bottom: 2rem; 
+}
+
+
+
+
+
+/** E N D E  */

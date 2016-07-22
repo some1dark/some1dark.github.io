@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Flexbox - die Kurzschreibweise flex-flow</title>
+    <style>
+      html { box-sizing: border-box; }
+      *, *::before, *::after { box-sizing: inherit; }
+      
+      body { font: 1rem/1.5 sans-serif; padding: 1rem; }
+      h1 { font-size: 1.5rem; margin-bottom: 0.5rem;}
+      code { 
+        font-size: inherit; 
+        font-weight: inherit; 
+        font-family: 'Consolas', 'Courier New', Courier, monospace;
+        line-height: inherit;
+        -webkit-font-smoothing: auto;
+        background: #e9e9e9; 
+        padding: 0.25rem; 
+        border-radius: 0.25rem; 
+      }
+      article {
+        border: 5px solid rgba(53%, 67%, 60%, 0.3); 
+        margin: 0 1rem 1rem 0;
+      }
+      figure, .text {
+        margin: 1rem;
+      }
+      figure img {
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+      }            
+      .text h2 { 
+        font-size: 1rem;
+        line-height: 1; 
+        margin: 0;
+      }      
+      /* figure und div.text im article nebeneinander */ 
+      article { 
+        display: flex;    
+        max-width: 500px; /* Begrenzung erst einmal mit max-width */
+      }
+      /* Vier Artikel als Flex-Items, Wrapping erlaubt */ 
+      main {
+        display: flex; 
+        flex-wrap: wrap; 
+      }
+      
+      /* Hier das CSS aus dem Training einfügen */ 
+      
+
+    </style>
+  </head>
+
+<body>
+
+<h1>Flexbox - die Kurzschreibweise <code>flex-flow</code></h1>
+
+<main>
+  <article>
+    <figure>
+      <img src="img/little-boxes-teil01.jpg" alt="Little Boxes - der HTML-Crashkurs">
+    </figure>
+    <div class="text">
+      <h2>1. Der HTML-Crashkurs</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut posuere dolor. Nullam bibendum semper elementum. Etiam et nisl vitae nulla viverra consequat. </p>
+    </div>
+  </article>
+  
+    <article>
+    <figure>
+      <img src="img/little-boxes-teil02.jpg" alt="Little Boxes - die CSS-Grundlagen">
+    </figure>
+    <div class="text">
+      <h2>2. Die CSS-Grundlagen</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut posuere dolor. Nullam bibendum semper elementum. Etiam et nisl vitae nulla viverra consequat. </p>
+    </div>
+  </article>
+  
+    <article>
+    <figure>
+      <img src="img/little-boxes-teil03.jpg" alt="Little Boxes - die CSS-Positionierung">
+    </figure>
+    <div class="text">
+      <h2>3. Die CSS-Positionierung</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut posuere dolor. Nullam bibendum semper elementum. Etiam et nisl vitae nulla viverra consequat. </p>
+    </div>
+  </article>
+  
+    <article>
+    <figure>
+      <img src="img/little-boxes-teil04.jpg" alt="Little Boxes - Selektoren für Fortgeschrittene">
+    </figure>
+    <div class="text">
+      <h2>4. CSS3 - die Selektoren</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut posuere dolor. Nullam bibendum semper elementum. Etiam et nisl vitae nulla viverra consequat. </p>
+    </div>
+  </article>
+  
+</main>
+
+</body>
+</html>

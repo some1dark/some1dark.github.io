@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="de">
+<!-- 
+- basiert auf FB2, 19.6, S. 475ff. 
+- Änderungen 
+  - body mit min-height:100% (wg. overflow-Problem beim Inhalt)
+  - div { flex: 1 auto } (ohne .wrap, "auto" wg. IE11)
+    siehe pmueller.de/blog/flexbox-ie-versteht-flex1-nicht-richtig.html
+--> 
+<head>
+	<meta charset="utf-8">	
+	<title>Flexbox - flexibles Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+<style>
+  /* Basisformatierung */ 
+  html { height: 100%; margin: 0; box-sizing: border-box; }
+  * { box-sizing: inherit; }
+  body { 
+    min-height: 100%; 
+    max-width: 960px; 
+    font: 1rem/1.5 sans-serif; 
+    padding: 0.5rem; 
+    margin: 0 auto;
+  }
+  h1 { font-size: 1.25rem; }
+  h2 { font-size: 1rem; }
+  header, footer, main, nav, aside { 
+    display: block;       /* für alle IE-Versionen notwendig */ 
+    background: #a8caf3;
+    padding: 0.5rem; 
+    border: 1px solid #333; 
+    border-radius: 0.25rem;
+    margin: 0.5rem;
+  }
+  /*
+  div.wrap-content { border: 1px solid #333; border-radius: 0.25rem; }
+  */
+  main > article { 
+    padding: 0.5rem 0; 
+    border-radius: 0.25rem; 
+    margin: 0.5rem 0; 
+  }
+  nav > ul { padding-left: 1rem; }
+  
+  
+  /* Flex it ... */ 
+  
+  /** 1. Layout okay, nur nav nach oben holen */ 
+  div.wrap-content { 
+    display: flex; 
+    flex-flow: column;
+  }
+  nav {
+    order: -1;
+  }
+  
+  /** 2. Mehrspaltig ab 600px oder so */ 
+  @media screen and (min-width: 600px) {
+    
+    /* Mehrspaltig */ 
+    div.wrap-content {
+      flex-flow: row; /* Flex-Items nebeneinander */ 
+    }
+    nav, aside {
+      flex: 0 0 10rem; /* Sidebars mit fester Breite (Breite ggfs. ändern) */ 
+    }
+    /* optional, main ist auch ohne "flex:1" schon flexibel */ 
+    /* main { flex: 1; } */
+    
+    /* Sticky Footer */ 
+    body { 
+      display: flex; 
+      flex-flow: column;
+    }
+    div.wrap-content {
+      flex: 1 auto; /* "auto" nur für IE11 nötig */ 
+    }
+
+  } /* Ende @media */ 
+  
+</style>
+
+</head>
+<body>
+<header>
+  <h1>Flexibles Layout</h1>
+  <p>Flexbox in Aktion</p>
+</header>
+
+<div class="wrap-content">
+  <main>
+    <h2>Der Inhaltsbereich</h2>
+    <article>Artikel 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</article>
+    <article>Artikel 2. Nur wenig Text.</article>
+    <article>Artikel 3. Phasellus finibus nulla posuere arcu blandit, nec venenatis eros commodo. Praesent non maximus nunc, vitae varius tellus. </article>
+  </main>
+
+  <aside>
+    <h2>Die Side-Bar</h2>
+    <p>Come on in.</p>
+    <p>Happy hour 9 to 5.</p>
+  </aside>
+  
+  <nav>
+    <h2>Die Nav-Bar</h2>
+    <ul>
+      <li>Startseite</li> 
+      <li>Über uns</li> 
+      <li>Kontakt</li> 
+    </ul>
+  </nav>
+
+</div> <!-- Ende div --> 
+  
+<footer>
+  <h2>Footer</h2>
+  <p>Copyright, Impressum und dergleichen mehr</p>
+</footer>
+
+</body>
+</html>

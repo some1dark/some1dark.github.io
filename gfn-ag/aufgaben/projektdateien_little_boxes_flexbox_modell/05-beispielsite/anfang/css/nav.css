@@ -1,0 +1,63 @@
+/* ====================================================
+
+  Stylesheet für die Navigation
+  Datei: nav.css
+
+==================================================== */
+
+.navmain {
+  background-color: #fee05a; 
+  background-image: linear-gradient(to bottom, #fee05a 0%, #f3c600 100%); 
+  padding: 0; 
+  margin: 0; 
+}
+
+.navmain ul {
+  
+  padding: 0; 
+  margin: 0; 
+}
+
+.navmain li {
+  list-style: none; 
+  line-height: 1; 
+  padding: 0; 
+  margin: 0; 
+}
+.navmain li:last-of-type {
+
+}
+
+.navmain a:link,
+.navmain a:visited {
+  display: block; 
+  text-decoration: none; 
+  color: black; 
+  padding: 0.5rem 1rem; 
+}
+
+.navmain a:hover,
+.navmain a:focus {
+  text-decoration: underline; 
+  color: black; 
+  background-color: #f3c600; 
+  background-image: linear-gradient(to bottom, #f7d337 0%, #fff2c1 100%); 
+}
+
+.navmain a:active {
+  color: white; 
+  background: #d90000; 
+}
+
+.navmain a.sie-sind-hier {
+  background-color: #ffeda0; 
+  background-image: linear-gradient(to bottom, #f7d337 0%, #fff2c1 100%); 
+  color: black; 
+  }
+
+
+
+
+
+
+/** E N D E  */

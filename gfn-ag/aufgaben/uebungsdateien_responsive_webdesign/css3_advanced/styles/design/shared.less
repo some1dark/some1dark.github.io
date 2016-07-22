@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+}
+
+html {
+    font-size: 100%;
+    height: 100%;
+    padding: 0;
+    
+    background-color: #fff;
+    background-attachment: fixed;
+    .linear-gradient(top; to bottom; #fff, #e6e6e6);
+}
+
+body {
+    color: #333;
+    font-size: 1em;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
+    width: 85%;
+    margin: 3em auto;
+    padding: 0;
+    position: relative;
+    .clearfix();
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display: block;
+}
+
+address {
+    font-style: normal;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+em, i {
+    font-style: italic;
+}
+
+img {
+    border-style: none;
+}
+
+a {
+    outline: none;
+}
+
+//Mixins:
+
+.clearfix() {
+    &:after {
+        content: ".";
+        display: block;
+        height: 0;
+        line-height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+}
+
+.no-user-select() {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.border-box() {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.box-shadow(...) {
+    -webkit-box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    box-shadow: @arguments;
+}
+
+.background-size(@size) {
+    -webkit-background-size: @size;
+    -moz-background-size: @size;
+    background-size: @size;
+}
+
+.background-origin(@origin) {
+    -moz-background-origin: @origin;
+    background-origin: ~"@{origin}-box";
+    
+    //@oldOrigin: replace(@origin, "-box", "");
+    //-moz-background-origin: @oldOrigin;
+    //background-origin: @origin;
+}
+
+.linear-gradient(@oldDirection; @newDirection; @colors) {
+    background-image: -webkit-linear-gradient(@oldDirection, @colors);
+    background-image: -moz-linear-gradient(@oldDirection, @colors);
+    background-image: linear-gradient(@newDirection, @colors);
+}
+
+.radial-gradient(@xPos; @yPos; @colors) {
+    background-image: -webkit-radial-gradient(@xPos @yPos, circle, @colors);
+    background-image: -moz-radial-gradient(@xPos @yPos, circle, @colors);
+    background-image: radial-gradient(circle at @xPos @yPos, @colors);
+}

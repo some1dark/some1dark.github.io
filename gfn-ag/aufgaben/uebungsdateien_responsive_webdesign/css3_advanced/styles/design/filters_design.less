@@ -1,0 +1,36 @@
+@import "shared.less";
+
+@font-face {
+    font-family: "Daniel";
+    src: url("../fonts/daniel.woff") format("woff"),
+        url("../fonts/daniel.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Daniel";
+    src: url("../fonts/danielbd.woff") format("woff"),
+        url("../fonts/danielbd.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+.cite,
+.image {
+    display: block;
+    margin: 0 auto 3rem auto;
+}
+
+.cite {
+    font-family: Daniel;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2em;
+    width: 60%;
+    padding: .5em;
+    
+    p:last-child {
+        text-align: right;
+    }
+}

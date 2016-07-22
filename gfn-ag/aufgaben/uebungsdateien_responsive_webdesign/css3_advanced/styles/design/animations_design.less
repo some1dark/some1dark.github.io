@@ -1,0 +1,22 @@
+@import "shared.less";
+
+#kreis,
+#henker {
+    margin: 0 6rem 6rem 0;
+    padding: 0;
+    float: left;
+}
+
+#kreis {
+    width: 16rem;
+    height: 16rem;
+    background-color: #ff8bbe;
+    
+    .radial-gradient(30%; 25%; #ffe5f0, #ff8bbe 30%, #b72285);
+    .box-shadow(0, 5px, 8px, rgba(183, 34, 133, 0.4));
+    .border-radius(50%);
+}
+
+#henker {
+    .box-shadow(0, 3px, 12px, rgba(0, 0, 0, 0.3));
+}

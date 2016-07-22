@@ -1,0 +1,30 @@
+@import "design/transformations_design.less";
+
+#rotate,
+#scale,
+#skew {
+    width: 14rem;
+    height: 14rem;
+    
+    -webkit-transform-origin: center;
+    -moz-transform-origin: center;
+    transform-origin: center;
+}
+
+#rotate {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#scale {
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    transform: scale(2);
+}
+
+#skew {
+    -webkit-transform: skewX(-30deg) translate(7rem, 5rem);
+    -moz-transform: skewX(-30deg) translate(7rem, 5rem);
+    transform: skewX(-30deg) translate(7rem, 5rem);
+}

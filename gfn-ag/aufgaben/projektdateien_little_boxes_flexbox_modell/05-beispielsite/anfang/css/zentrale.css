@@ -1,0 +1,24 @@
+/* ======================================
+
+  Zentrales Stylesheet 
+  Datei: zentrale.css 
+
+======================================= */ 
+
+@import url(basis.css);  
+
+@import url(header.css);
+
+@import url(nav.css);
+
+@import url(galerie.css); 
+
+
+
+
+
+
+
+
+
+/**  E N D E */ 

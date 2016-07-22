@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">	
+  <title>Flexbox - Kontaktformular</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<style>
+  html { box-sizing: border-box; }
+  *, *::before, *::after { box-sizing: inherit; }
+  body { font: 1rem/1.5 sans-serif; min-width: 320px; padding: 1rem; margin: auto; }
+  h1 { font-size: 1.5rem; margin-bottom: 1.5rem;}
+
+  /* Basisformatierung */ 
+  form { max-width: 500px; }
+  form > div { margin-bottom: 1em; }
+  input,
+  textarea, 
+  button {
+    font: 1.1rem/normal sans-serif;  
+    text-align: left; 
+    padding: 0.25rem 0.75rem;
+    border: none;
+    margin: 0; 
+  }
+  input, textarea {
+    background: #E9E9E9;
+  }
+  button {
+    text-align: center; 
+    background-color: black;
+    color: white;
+    cursor: pointer;	
+  }
+  button:hover, 
+  button:focus {
+    background-color: darkorange;
+    color: white; 
+  }
+
+  /* Flex it */ 
+  form > div { 
+    display: flex; 
+    flex-flow: wrap; 
+  }
+  input, textarea, button {
+    flex: 1 20rem;
+  }
+
+  label {
+    flex: 0 7rem; 
+  }
+
+  /** 1. Buttonbreite ohne Media Query ändern
+  * Buttonbreite durch Inhalt, rechts ausgerichtet    
+  */
+  button {
+    flex: none; /* => 0 0 auto */ 
+    margin-left: auto; /* Button nach rechts außen */ 
+  }
+  
+  /** 2. Buttonbreite mit Media Query ändern 
+    * Button so breit wie Eingabefelder
+    * Wert für Media Query durch Ausprobieren ermitteln
+    * Muss nicht unbedingt pixelgenau sein.  
+    */
+  @media screen and (min-width: 464px) {
+    button {
+      margin-left: 7rem;
+    }
+  } /* Ende @media */
+  
+
+</style>
+
+</head>
+
+<body>
+<h1>Flexbox - Kontaktformular</h1>
+
+<form class="kontaktformular" action="">
+  
+  <div>
+    <label for="besuchername">Ihr Name: </label>
+    <input type="text" id="besuchername" name="besuchername" required> 
+  </div>  
+
+  <div>
+    <label for="besuchermail">Ihre E-Mail: </label>
+    <input type="email" id="besuchermail" name="besuchermail" required> 
+  </div>  
+
+  <div>
+    <label for="nachricht">Ihre Nachricht: </label>
+    <textarea id="nachricht" name="nachricht" cols="20" rows="5" required></textarea>
+  </div>  
+
+  <div>
+    <button type="submit">Abschicken</button>
+  </div>  
+
+</form>  
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Flexbox - Reihenfolge ändern mit row-reverse und wrap-reverse</title>
+    <style>
+      html { box-sizing: border-box; }
+      *, *::before, *::after { box-sizing: inherit; }
+      body { font: 1rem/1.5 sans-serif; padding: 1rem; }
+      h1 { font-size: 1.5rem; margin-bottom: 0.5rem;}
+      code { 
+        font-size: inherit; 
+        font-weight: inherit; 
+        font-family: 'Consolas', 'Courier New', Courier, monospace;
+        line-height: inherit;
+        -webkit-font-smoothing: auto;
+        background: #e9e9e9; 
+        padding: 0.25rem; 
+        border-radius: 0.25rem; 
+      }
+      article {
+        border: 5px solid rgba(53%, 67%, 60%, 0.3); 
+        margin: 0 1rem 1rem 0;
+      }
+      
+      .bild, .beschreibung {
+        margin: 1rem;
+      }
+      .bild img {
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+      }            
+      .beschreibung h2 { 
+        font-size: 1rem;
+        line-height: 1; 
+        margin: 0;
+      }      
+
+      /* Beispiel mit Verschachtelung von Flex-Containern (main, article) */ 
+      article { 
+        display: flex;    /* 1 */
+        max-width: 500px; /* 2 */ 
+      }
+
+      /** Ausgangsposition für flex-direction: row-reverse und flex-wrap: wrap-reverse */
+      main { 
+        display: flex; 
+        flex-direction: row; 
+        flex-wrap: wrap; 
+      }
+    </style>
+  </head>
+
+<body>
+
+<h1>Flexbox - Reihenfolge ändern mit <code>row-reverse</code> und <code>wrap-reverse</code></h1>
+
+<main>
+
+  <article>
+    <div class="bild">
+      <img src="img/little-boxes-teil01.jpg" alt="Little Boxes - der HTML-Crashkurs">
+    </div>
+    <div class="beschreibung">
+      <h2>1. Der HTML-Crashkurs</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut posuere dolor. Nullam bibendum semper elementum. Etiam et nisl vitae nulla viverra consequat. </p>
+    </div>
+  </article>
+  
+    <article>
+    <div class="bild">
+      <img src="img/little-boxes-teil02.jpg" alt="Little Boxes - die CSS-Grundlagen">
+    </div>
+    <div class="beschreibung">
+      <h2>2. Die CSS-Grundlagen</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut posuere dolor. Nullam bibendum semper elementum. Etiam et nisl vitae nulla viverra consequat. </p>
+    </div>
+  </article>
+  
+    <article>
+    <div class="bild">
+      <img src="img/little-boxes-teil03.jpg" alt="Little Boxes - die CSS-Positionierung">
+    </div>
+    <div class="beschreibung">
+      <h2>3. Die CSS-Positionierung</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut posuere dolor. Nullam bibendum semper elementum. Etiam et nisl vitae nulla viverra consequat. </p>
+    </div>
+  </article>
+  
+    <article>
+    <div class="bild">
+      <img src="img/little-boxes-teil04.jpg" alt="Little Boxes - Selektoren für Fortgeschrittene">
+    </div>
+    <div class="beschreibung">
+      <h2>4. CSS3 - die Selektoren</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut posuere dolor. Nullam bibendum semper elementum. Etiam et nisl vitae nulla viverra consequat. </p>
+    </div>
+  </article>
+  
+</main>
+
+</body>
+</html>

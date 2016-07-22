@@ -1,0 +1,38 @@
+/* ====================================================
+
+  Stylesheet für den PageHeader 
+  Datei: header.css
+
+==================================================== */
+
+.pageheader {
+  background-color: #f3c600; 
+  color: black; 
+  padding: 1rem; 
+  
+
+}
+
+.pageheader h1 { padding: 0; margin: 0;}
+
+img.logo {
+  display: block; 
+  box-sizing: content-box; 
+  background-color: white;
+  color: black; 
+  padding: 0.5rem; 
+  border: 0.5rem solid #d9d9d9; 
+}
+
+p.slogan {
+  padding: 0.25rem 0; 
+  margin: 0;  
+}
+
+p.slogan span { 
+
+  display: block; 
+  color: #d90000; 
+}
+
+/** E N D E  */

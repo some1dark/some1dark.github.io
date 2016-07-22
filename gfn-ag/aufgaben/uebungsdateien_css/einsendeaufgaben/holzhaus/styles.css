@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    color: #000;
+    background-color: #999;
+}
+
+body {
+    width: 80%; /* Breite ist Voraussetzung für Zentrierung */
+    min-width: 980px;
+    max-width: 1400px;
+    min-height: 40rem;
+    margin: 0 auto; /* zentriert den Inhalt im Browserfenster */
+    background-image: url(bilder/hintergrund.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	-webkit-box-shadow: 1px 1px 4px #000;
+	-moz-box-shadow: 1px 1px 4px #000;
+	box-shadow: 1px 1px 4px #000;
+	margin-top: 2rem;
+}
+
+nav#hauptnavi {
+	display: table;
+	width: 100%;
+	height: 2rem;
+}
+nav#hauptnavi ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(255 , 240, 0, 0.5);
+}
+nav#hauptnavi ul li {
+    float: left;
+	display: table-cell;
+	text-align: center;
+	white-space: nowrap;
+	text-align: center;
+	width: 20%;
+}
+nav#hauptnavi ul li a {
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    text-decoration: none;
+	border: 1px solid #fff;
+	font-variant-caps: small-caps;
+}
+nav#hauptnavi ul li a:hover {
+    text-decoration: none;
+	color: #333;
+	background-color: rgba(0, 159, 124, 0.5);
+	transition: 0.4s;
+}
+
+main {
+	width: 80%;
+	clear: both;
+}
+
+main a#logo {
+	float: right;
+	width: 6rem;
+	padding-top: 1rem;
+	padding-right: 7rem;
+}
+main h1 {
+	padding: 1rem;
+	font-size: 2.5rem;
+	color: #000;
+	text-shadow: 1px 1px 0px #000;
+}
+main h1 span {
+	color: #009169;
+}
+main p {
+	padding: 1rem;
+	padding-left: 4rem;
+	text-align: justify;
+}
+main a {
+	color: #009169;
+	font-weight: bold;
+	text-decoration: none;
+}
+main a:hover {
+	color: #009169;
+	text-decoration: underline;
+}
+
+nav#navi_rechts {
+	max-width: 20%;
+	top: -20.4rem;
+	float: right;
+	position: relative;	
+	clear: both;
+	font-size: 1.1rem;
+}
+nav#navi_rechts ul {
+	display: block;
+}
+nav#navi_rechts ul li {
+	position: relative;
+	display: block;
+	border: 1px solid #fff;
+	list-style: none;
+	text-align: center;
+}
+nav#navi_rechts ul li:nth-of-type(1) {
+	background-image: url(bilder/haeuser/haus1.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+	opacity: 0.8;
+}nav#navi_rechts ul li:nth-of-type(2) {
+	background-image: url(bilder/haeuser/haus2.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+	opacity: 0.8;
+}nav#navi_rechts ul li:nth-of-type(3) {
+	background-image: url(bilder/haeuser/haus3.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+	opacity: 0.8;
+}nav#navi_rechts ul li:nth-of-type(4) {
+	background-image: url(bilder/haeuser/haus4.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+	opacity: 0.8;
+}nav#navi_rechts ul li:nth-of-type(5) {
+	background-image: url(bilder/haeuser/haus5.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+	opacity: 0.8;
+}nav#navi_rechts ul li:nth-of-type(6) {
+	background-image: url(bilder/haeuser/haus6.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+	opacity: 0.8;
+}nav#navi_rechts ul li:hover {
+	opacity: 1;
+	transition: 0.4s;
+}
+nav#navi_rechts ul li a {
+	display: block;
+	width: 100%;
+	height: 5rem;
+	color: #333;	
+	line-height: inherit;	
+	font-variant-caps: small-caps;
+	text-decoration: none;
+	font-weight: bold;
+	padding-top: 3.0rem;
+	padding-bottom: 3.15rem;
+}
+nav#navi_rechts ul li a:hover {}

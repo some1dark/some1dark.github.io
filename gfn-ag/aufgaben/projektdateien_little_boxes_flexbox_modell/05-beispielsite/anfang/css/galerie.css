@@ -1,0 +1,40 @@
+/* ====================================================
+
+  Stylesheet für die Bildergalerie
+  Datei: galerie.css
+
+==================================================== */
+
+.galerie {
+
+  
+}
+
+.galerie article {
+  
+  
+}
+
+.galerie figure {
+  max-width: 280px; 
+  margin-top: 1rem; 
+  margin-right: 1rem;  
+}
+
+.galerie img {
+  max-width: 100%; 
+  border-radius: 0.25rem; 
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.3); 
+}
+
+.galerie .text {
+  max-width: 280px; 
+  margin-top: 1rem; 
+  margin-bottom: 2rem; 
+}
+
+
+
+
+
+/** E N D E  */
