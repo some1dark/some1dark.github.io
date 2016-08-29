@@ -8,7 +8,7 @@ $(document).ready(function(){
         console.log('checked checkbox');
     }
     else{
-        $('#myModal').modal('show');
+        $('#Age18').modal('show');
         console.log('uncheck checkbox');
     }
 
