@@ -1,4 +1,11 @@
+/*  Copyright (C) Stephen James Morris - All Rights Reserved
+ *  Unauthorized copying of this file, via any medium is strictly prohibited without writen permission
+ *  Proprietary and confidential
+ *  Written by Stephen James Morris <stephen.morris@outlook.de>, October 2016
+ */
+
 "use strict"
+
 let choices = ["stein", "papier", "schere"];                    // die möglichen Auswahlen die getroffen werden dürfen
 let userAuswahl = "";                                           // die Variable um die vom User eigabe zu speichern
 let computerAuswahl = Math.random();                            // 0.00 bis 1.00.
@@ -22,31 +29,31 @@ let userEingabe = function() {
 userEingabe();
 
 let vergleiche = function(Auswahl1, Auswahl2) {                 // vergleiche die Auswahlen
-    if(Auswahl1 === Auswahl2) {
-        return "Es ist uentschieden!"
+    if(Auswahl1 === Auswahl2) {                                 // Auswahl1 ist der User & Auswahl2 ist der Computer
+        return "Es ist uentschieden!"                           // wenn beide die selbe Wahl haben ist es unentschieden
 
-    } else if(Auswahl1 === "stein") {
+    } else if(Auswahl1 === "stein") {                           // wenn der User "Stein" wählt
 
-        if(Auswahl2 === "schere") {
-            return "Stein gewinnt";
+        if(Auswahl2 === "schere") {                             // und der Computer "Schere" wählt
+            return "Stein gewinnt";                             // gewinnt der User (Stein schlägt Schere)
         } else {
-            return "Papier gewinnt";
+            return "Papier gewinnt";                            // sonst gewinnt der Computer (Stein schlägt Papier)
         }
 
-    } else if(Auswahl1 === "papier") {
+    } else if(Auswahl1 === "papier") {                          // wenn der User "Papier" wählt
 
-        if(Auswahl2 === "stein") {
-            return "Papier gewinnt";
+        if(Auswahl2 === "stein") {                              // und der Computer "Stein" wählt
+            return "Papier gewinnt";                            // gewinnt der User (Papier schlägt Stein)
         } else {
-            return "Schere gewinnt";
+            return "Schere gewinnt";                            // sonst gewinnt der Computer (Schere schlägt Papier)
         }
 
-    } else if(Auswahl1 === "schere") {
+    } else if(Auswahl1 === "schere") {                          // wenn der User "Schere" wählt
         
-        if(Auswahl2 === "stein") {
-            return "Stein gewinnt";
+        if(Auswahl2 === "stein") {                              // und der Computer "Stein" wählt
+            return "Stein gewinnt";                             // gewinnt der Computer (Stein schlägt Schere)
         } else {
-            return "Schere gewinnt";
+            return "Schere gewinnt";                            // sonst gewinnt der User (Schere schlägt Papier)
         }
     }
 };
